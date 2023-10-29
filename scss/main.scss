@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   
-
   &__logo
   {
     color: $secondary-color;
@@ -49,7 +48,7 @@
           transition: ease-in-out;
           transition-property: color,background-color;
         }
-        color: white;
+        color: $secondary-color;
         text-align: center;
         text-decoration: none;
         padding: 20px;
@@ -80,6 +79,7 @@
           font-weight: 800;
         }
         p{
+          color: $p-color;
           text-align: center;
           font-weight: 400;
         }
@@ -96,17 +96,22 @@
       background-color: rgb(244, 237, 237);
       text-align: center;
       justify-content: space-evenly;
+      padding: 5em 5em;
       &__left
       {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &--text
         {
-          display: flex;
           flex-direction: column;
           justify-content: space-evenly;
           h1{
+            color: $h1-color;
             text-align: center;
           }
           p{
+            color: $p-color;
             justify-content: center;
             text-align: end;
           }
@@ -120,16 +125,37 @@
         }
         &--stores
           {
+            padding: 5em 5em;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
-            li{
-              display: flex-center;
-              list-style: none;
-              a{
-                img{
-                  height: 4em;
-                  width: 8em;
+            
+            &-1
+            {
+              li{
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                a{
+                  img{
+                    height: 4em;
+                    width: 8em;
+                  }
+                }
+              }
+            }
+
+            &-2
+            {
+              li{
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                a{
+                  img{
+                    height: 4em;
+                    width: 8em;
+                  }
                 }
               }
             }
@@ -148,6 +174,55 @@
 
 
     }
+    &__career
+    {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      &__left
+      {
+        img{
+          display: flex;
+          height: 467px;
+          width: 526px;
+        }
+      }
+      &__right
+      {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h1{
+          color: $h1-color;
+          font-weight: 500;
+        }
+        p{
+          color: $p-color;
+          text-align: center;
+        }
+        &--button
+        {
+          margin: 5em 0;
+          a{
+            &:hover
+            {
+              border-radius: 50px;
+              background-color: #2f149b;
+              transition: ease-in-out;
+              transition-property: color,background-color;
+            }
+            color: $secondary-color;
+            border-radius: 50px;
+            background-color: $primary-color;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px;
+          }
+        }
+      }
+    }
   }
 
 }
@@ -157,16 +232,27 @@
   height: 10rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   &__logo
   {
-    color: $secondary-color;
-    width: 200px;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 2em 2em;
+    &--img{
+      width: 200px;
+      height: 100%;
+    }
+    &--email
+    {
+      a{
+        color: $secondary-color;
+        font-weight: 300;
+        text-decoration: none;
+      }
+    }
   }
   &__routs{
     color: #fff;
@@ -230,6 +316,14 @@
         justify-content: space-between;
         color: #fff;
         list-style: none;
+        margin: 0 6px;
+        i{
+          align-items: center;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          padding: 14px;
+
+        }
       }
     }
     &__copy

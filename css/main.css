@@ -38,7 +38,7 @@
   font-weight: 800;
 }
 .header__links--item a {
-  color: white;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   padding: 20px;
@@ -65,6 +65,7 @@
   font-weight: 800;
 }
 .main__content__info--text p {
+  color: black;
   text-align: center;
   font-weight: 400;
 }
@@ -77,16 +78,23 @@
   background-color: rgb(244, 237, 237);
   text-align: center;
   justify-content: space-evenly;
+  padding: 5em 5em;
+}
+.main__content__platforms__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main__content__platforms__left--text {
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 .main__content__platforms__left--text h1 {
+  color: black;
   text-align: center;
 }
 .main__content__platforms__left--text p {
+  color: black;
   justify-content: center;
   text-align: end;
 }
@@ -97,15 +105,26 @@
   text-align: center;
 }
 .main__content__platforms__left--stores {
+  padding: 5em 5em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
-.main__content__platforms__left--stores li {
-  display: flex-center;
+.main__content__platforms__left--stores-1 li {
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
-.main__content__platforms__left--stores li a img {
+.main__content__platforms__left--stores-1 li a img {
+  height: 4em;
+  width: 8em;
+}
+.main__content__platforms__left--stores-2 li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.main__content__platforms__left--stores-2 li a img {
   height: 4em;
   width: 8em;
 }
@@ -113,21 +132,71 @@
   height: 38em;
   width: 20em;
 }
+.main__content__career {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main__content__career__left img {
+  display: flex;
+  height: 467px;
+  width: 526px;
+}
+.main__content__career__right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main__content__career__right h1 {
+  color: black;
+  font-weight: 500;
+}
+.main__content__career__right p {
+  color: black;
+  text-align: center;
+}
+.main__content__career__right--button {
+  margin: 5em 0;
+}
+.main__content__career__right--button a {
+  color: #fff;
+  border-radius: 50px;
+  background-color: #2e2ee6;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+}
+.main__content__career__right--button a:hover {
+  border-radius: 50px;
+  background-color: #2f149b;
+  transition: ease-in-out;
+  transition-property: color, background-color;
+}
 
 .footer {
   background-color: #2e2ee6;
   height: 10rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .footer__logo {
-  color: #fff;
-  width: 200px;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 2em 2em;
+}
+.footer__logo--img {
+  width: 200px;
+  height: 100%;
+}
+.footer__logo--email a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
 }
 .footer__routs {
   color: #fff;
@@ -184,6 +253,13 @@
   justify-content: space-between;
   color: #fff;
   list-style: none;
+  margin: 0 6px;
+}
+.footer__socials li a i {
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 14px;
 }
 .footer__socials__copy {
   color: #fff;
