@@ -1,0 +1,241 @@
+@import "variables.scss";
+@import "font.scss";
+@import "base";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+
+.header
+{
+  background-color: $primary-color;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+
+  &__logo
+  {
+    color: $secondary-color;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a
+    {
+      display: flex;
+      text-decoration: none;
+    }
+  }
+  
+  &__links
+  {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+    margin-bottom: 0;
+
+    &--item
+    {
+      font-weight: 800;
+      a
+      {
+        &:hover
+        {
+          border-radius: 50px;
+          background-color: #2f149b;
+          transition: ease-in-out;
+          transition-property: color,background-color;
+        }
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 20px;
+      }
+    }
+
+  }
+
+}
+
+.main
+{
+  display: flex;
+
+  &__content
+  {
+    &__info
+    {
+      &--text
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20em;
+        width: 100%;
+        h2{
+          text-align: center;
+          font-weight: 800;
+        }
+        p{
+          text-align: center;
+          font-weight: 400;
+        }
+        span{
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__platforms
+    {
+      display: flex;
+      background-color: rgb(244, 237, 237);
+      text-align: center;
+      justify-content: space-evenly;
+      &__left
+      {
+        &--text
+        {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          h1{
+            text-align: center;
+          }
+          p{
+            justify-content: center;
+            text-align: end;
+          }
+          a
+          {
+            font-weight: 600;
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+          }
+        }
+        &--stores
+          {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            li{
+              display: flex-center;
+              list-style: none;
+              a{
+                img{
+                  height: 4em;
+                  width: 8em;
+                }
+              }
+            }
+          }
+      }
+      &__right
+      {
+        &--img
+        {
+          img{
+            height: 38em;
+            width: 20em;
+          }
+        }
+      }
+
+
+    }
+  }
+
+}
+.footer
+{
+  background-color: $primary-color;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo
+  {
+    color: $secondary-color;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__routs{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+    &__items{
+        justify-content: space-between;
+        display: flex;
+        color: #fff;
+        
+        &--item
+        {
+          text-decoration: none;
+          margin-right: 2rem;
+          margin-bottom: 0;
+          list-style: none;
+          a
+          {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+  }
+  &__ref
+  {
+    display: table-row;
+    color: #fff;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    list-style: none;
+    text-decoration: none;
+    a{
+      font-weight: 100;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__socials
+  {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: #fff;
+    border-radius: 100px;
+    align-items: center;
+    li
+    {
+      display: flex;
+      justify-content: space-around;
+      height: 5em;
+      width: 10em;
+      margin-right: 2rem;
+      margin-bottom: 0;
+      a
+      {
+        justify-content: space-between;
+        color: #fff;
+        list-style: none;
+      }
+    }
+    &__copy
+    { 
+      color: #fff;
+    }
+  }
+
+}
