@@ -1,0 +1,19 @@
+.games
+{
+  display: none;
+  &__info
+  {
+    &--left
+    {
+      display: flex;
+    }
+    &--right
+    {
+      display: flex;
+    }
+  }
+  &__platforms
+  {
+    display: flex;
+  }
+}
