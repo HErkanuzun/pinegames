@@ -152,17 +152,8 @@
   color: #fff;
 }
 
-.games {
-  display: none;
-}
-.games__info--left {
-  display: flex;
-}
-.games__info--right {
-  display: flex;
-}
-.games__platforms {
-  display: flex;
+* {
+  color: red;
 }
 
 /*# sourceMappingURL=main.css.map */

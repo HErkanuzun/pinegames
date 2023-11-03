@@ -1,19 +1,126 @@
 .games
 {
-  display: none;
   &__info
   {
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 237, 237);
+    text-align: center;
+    justify-content: space-evenly;
     &--left
     {
-      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: start;
+      h1{
+        color: $h1-color;
+        text-align: center;
+      }
+      p{
+        color: $p-color;
+        justify-content: center;
+        text-align: start;
+      }
+      a
+      {
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+      }
     }
     &--right
     {
-      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  }
+  &__video
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__platforms
   {
     display: flex;
+    background-color: $background-color-1;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 5em 5em;
+    &__left
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--text
+      {
+        flex-direction: column;
+        justify-content: space-evenly;
+        h1{
+          color: $h1-color;
+          text-align: center;
+        }
+        p{
+          color: $p-color;
+          justify-content: center;
+          text-align: end;
+        }
+        a
+        {
+          font-weight: 600;
+          text-decoration: none;
+          color: inherit;
+          text-align: center;
+        }
+      }
+      &--stores
+        {
+          padding: 5em 5em;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          
+          &-1
+          {
+            li{
+              display: flex;
+              justify-content: center;
+              list-style: none;
+              a{
+                img{
+                  height: 4em;
+                  width: 8em;
+                }
+              }
+            }
+          }
+
+          &-2
+          {
+            li{
+              display: flex;
+              justify-content: center;
+              list-style: none;
+              a{
+                img{
+                  height: 4em;
+                  width: 8em;
+                }
+              }
+            }
+          }
+        }
+    }
+    &__right
+    {
+      &--img
+      {
+        img{
+          height: 38em;
+          width: 20em;
+        }
+      }
+    }
   }
 }

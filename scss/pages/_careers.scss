@@ -1,0 +1,77 @@
+.positions
+{
+    background-color:   $background-color-1;
+    color: rgb(30, 30, 30);
+    &__title
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 3em;
+        h1{
+            font-weight: 700;
+        }
+    }
+    &__cards
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        &__card
+        {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: $background-color-2;
+            border-radius: 30px;
+            width: 370px;
+            aspect-ratio: 1/0.5;
+            box-shadow: 2px 3px 4px 4px rgb(233, 231, 231);
+            margin: 1em;
+            &:hover
+            {
+                box-shadow: 2px 3px 4px 4px rgb(215, 214, 214);
+            }
+            &--title
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    font-weight: 600;
+                    margin: 1em 1em;
+                }
+            }
+            &--p
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &--button
+            {  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px 0px;
+                font-weight: 550;
+                a{
+                    &:hover
+                    {
+                        border-radius: 50px;
+                        background-color: #2f149b;
+                        transition: ease-in-out;
+                        transition-property: color,background-color;
+                    }
+                color: $secondary-color;
+                border-radius: 50px;
+                background-color: $primary-color;
+                text-align: center;
+                text-decoration: none;
+                padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
