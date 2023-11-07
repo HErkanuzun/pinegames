@@ -60,6 +60,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 1em 1em;
 }
 @media (min-width: 768px) {
   .footer__logo {
@@ -125,7 +126,6 @@
   }
   .footer__socials {
     display: flex;
-    width: 20em;
     justify-content: space-between;
     list-style: none;
     border: #fff;
@@ -135,8 +135,6 @@
   .footer__socials li {
     display: flex;
     justify-content: space-around;
-    height: 4em;
-    width: 10em;
     margin-right: 2rem;
     margin-bottom: 0;
   }
@@ -325,7 +323,7 @@
   .main__content__platforms__left--stores-1 li a img {
     height: 4em;
     width: 8em;
-    max-width: 100%;
+    min-width: 4em;
   }
   .main__content__platforms__left--stores-2 li {
     display: flex;
