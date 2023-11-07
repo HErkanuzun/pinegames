@@ -303,7 +303,7 @@
   .main__content__platforms__left--text p {
     color: black;
     justify-content: center;
-    text-align: end;
+    text-align: start;
   }
   .main__content__platforms__left--text a {
     font-weight: 600;
