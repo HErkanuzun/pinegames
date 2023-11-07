@@ -5,119 +5,122 @@
   height: 10rem;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
-  &__logo
+  @media (min-width: 768px)
   {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2em 2em;
-    &--img{
-      width: 200px;
-      height: 100%;
-    }
-    &--email
-    {
-      a{
-        color: $secondary-color;
-        font-weight: 300;
-        text-decoration: none;
-      }
-    }
-  }
-  &__routs{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    &__ref
+    &__logo
     {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 2em 5em;
+      &--img{
+        width: 200px;
+        height: 100%;
+      }
+      &--email
+      {
+        a{
+          color: $secondary-color;
+          font-weight: 300;
+          text-decoration: none;
+        }
+      }
+    }
+    &__routs{
       color: #fff;
-      margin-right: 2rem;
-      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       list-style: none;
-      
-      &__items
+      &__ref
       {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        &--item{
-            justify-content: center;
-            align-items: center;
-            a{
-              font-weight: 100;
-              text-decoration: none;
-              color: #fff;
-            }
-      }
-  
-      } 
-    }
-    
-    &__items{
-        justify-content: space-between;
-        display: flex;
         color: #fff;
+        margin-right: 2rem;
+        margin-bottom: 0;
+        list-style: none;
         
-        
-        &--item
+        &__items
         {
-          text-decoration: none;
-          margin-right: 2rem;
-          margin-bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
           list-style: none;
-          a
+          &--item{
+              justify-content: center;
+              align-items: center;
+              a{
+                font-weight: 100;
+                text-decoration: none;
+                color: #fff;
+              }
+        }
+    
+        } 
+      }
+      
+      &__items{
+          justify-content: space-between;
+          display: flex;
+          color: #fff;
+          
+          
+          &--item
           {
-            color: #fff;
             text-decoration: none;
+            margin-right: 2rem;
+            margin-bottom: 0;
+            list-style: none;
+            a
+            {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+    }
+  
+  
+    &__socials
+    {
+      display: flex;
+      width: 20em;
+      justify-content: space-between;
+      list-style: none;
+      border: #fff;
+      border-radius: 100px;
+      align-items: center;
+      li
+      {
+        display: flex;
+        justify-content: space-around;
+        height: 4em;
+        width: 10em;
+        margin-right: 2rem;
+        margin-bottom: 0;
+        a
+        {
+          justify-content: space-between;
+          color: #fff;
+          list-style: none;
+          margin: 0 6px;
+          i
+          {
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            padding: 14px;
           }
         }
       }
-  }
-
-
-  &__socials
-  {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    border: #fff;
-    border-radius: 100px;
-    align-items: center;
-    li
-    {
-      display: flex;
-      justify-content: space-around;
-      height: 4em;
-      width: 10em;
-      margin-right: 2rem;
-      margin-bottom: 0;
-      a
-      {
-        justify-content: space-between;
+      &__copy
+      { 
         color: #fff;
-        list-style: none;
-        margin: 0 6px;
-        i
-        {
-          align-items: center;
-          border: 1px solid #fff;
-          border-radius: 50%;
-          padding: 14px;
-        }
       }
     }
-    &__copy
-    { 
-      color: #fff;
-    }
   }
-
 }
