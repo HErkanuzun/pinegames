@@ -62,99 +62,159 @@
   justify-content: space-between;
   padding: 1em 1em;
 }
-@media (min-width: 768px) {
-  .footer__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2em 5em;
-  }
-  .footer__logo--img {
-    width: 200px;
-    height: 100%;
-  }
-  .footer__logo--email a {
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-  }
-  .footer__routs {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-  }
-  .footer__routs__ref {
-    display: flex;
-    color: #fff;
-    margin-right: 2rem;
-    margin-bottom: 0;
-    list-style: none;
-  }
-  .footer__routs__ref__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-  }
-  .footer__routs__ref__items--item {
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__routs__ref__items--item a {
-    font-weight: 100;
-    text-decoration: none;
-    color: #fff;
-  }
-  .footer__routs__items {
-    justify-content: space-between;
-    display: flex;
-    color: #fff;
-  }
-  .footer__routs__items--item {
-    text-decoration: none;
-    margin-right: 2rem;
-    margin-bottom: 0;
-    list-style: none;
-  }
-  .footer__routs__items--item a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .footer__socials {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    border: #fff;
-    border-radius: 100px;
-    align-items: center;
-  }
-  .footer__socials li {
-    display: flex;
-    justify-content: space-around;
-    margin-right: 2rem;
-    margin-bottom: 0;
-  }
-  .footer__socials li a {
-    justify-content: space-between;
-    color: #fff;
-    list-style: none;
-    margin: 0 6px;
-  }
-  .footer__socials li a i {
-    align-items: center;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    padding: 14px;
-  }
-  .footer__socials__copy {
-    color: #fff;
-  }
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em 5em;
+}
+.footer__logo--img {
+  width: 200px;
+  height: 100%;
+}
+.footer__logo--email a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+.footer__routs {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.footer__routs__ref {
+  display: flex;
+  color: #fff;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  list-style: none;
+}
+.footer__routs__ref__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+.footer__routs__ref__items--item {
+  justify-content: center;
+  align-items: center;
+}
+.footer__routs__ref__items--item a {
+  font-weight: 100;
+  text-decoration: none;
+  color: #fff;
+}
+.footer__routs__items {
+  justify-content: space-between;
+  display: flex;
+  color: #fff;
+}
+.footer__routs__items--item {
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  list-style: none;
+}
+.footer__routs__items--item a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border: #fff;
+  border-radius: 100px;
+  align-items: center;
+}
+.footer__socials li {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2rem;
+  margin-bottom: 0;
+}
+.footer__socials li a {
+  color: #fff;
+  list-style: none;
+  margin: 0 6px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.footer__socials li a i {
+  font-size: 32px;
+}
+.footer__socials__copy {
+  color: #fff;
 }
 
+/*
+
+Bigger2Smaller
+*/
+@media screen and (max-width: 1440px) {
+  .footer {
+    background-color: #2e2ee6;
+    height: 200px;
+    padding: 1em 1em;
+    align-items: center;
+  }
+  .footer__logo {
+    margin: 0;
+  }
+  .footer__logo--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__routs {
+    flex-direction: column;
+  }
+  .footer__socials--item {
+    margin-right: 8px !important;
+  }
+  .footer__socials--link {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+  }
+  .footer__socials--link i {
+    border: none !important;
+    font-size: 24px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    background-color: #2e2ee6;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    height: auto;
+  }
+  .footer__logo {
+    margin: 15px 0;
+  }
+  .footer__routs {
+    margin: 15px 0;
+  }
+  .footer__socials {
+    padding: 0;
+  }
+}
 @media (min-width: 768px) {
   .games__info {
     display: flex;

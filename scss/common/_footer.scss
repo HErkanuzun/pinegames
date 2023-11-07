@@ -7,8 +7,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1em 1em;
-  @media (min-width: 768px)
-  {
+
     &__logo
     {
       display: flex;
@@ -29,6 +28,7 @@
         }
       }
     }
+
     &__routs{
       color: #fff;
       display: flex;
@@ -84,7 +84,7 @@
         }
     }
   
-  
+
     &__socials
     {
       display: flex;
@@ -100,18 +100,20 @@
         justify-content: space-around;
         margin-right: 2rem;
         margin-bottom: 0;
-        a
-        {
-          justify-content: space-between;
+        a{
           color: #fff;
           list-style: none;
           margin: 0 6px;
-          i
-          {
-            align-items: center;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            padding: 14px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          width:60px;
+          height: 60px;;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          i{
+            font-size:32px;
           }
         }
       }
@@ -119,6 +121,78 @@
       { 
         color: #fff;
       }
+    
+  }
+}
+/*
+
+Bigger2Smaller
+*/
+
+//1440-1024px
+@media screen and (max-width:1440px) {
+  
+  .footer
+  {
+    background-color: $primary-color;
+    height: 200px;
+    padding: 1em 1em;
+    align-items: center;
+    &__logo{
+      margin: 0;
+      &--img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+
+    &__routs{
+      flex-direction: column;
+    }
+
+    &__socials{
+
+      &--item{
+        margin-right: 8px !important;
+      }
+      &--link{
+        border:1px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width:50px;
+        height: 50px;
+        i{
+          border:none !important;
+          font-size:24px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .footer
+  {
+    background-color: $primary-color;
+    flex-direction: column;
+    padding:0;
+    align-items: center;
+    height: auto;
+    &__logo{
+      margin:15px 0;
+    }
+
+    &__routs{
+      margin:15px 0;
+    }
+
+    &__socials{
+      padding:0;
+    }
+  
   }
 }
