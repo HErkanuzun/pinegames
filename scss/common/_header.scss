@@ -8,8 +8,6 @@
   justify-content: space-between;
   padding: 0em 4em;
 
-  @media(min-width: 768px) 
-  {
     &__logo
     {
       color: $secondary-color;
@@ -55,5 +53,12 @@
       }
   
     }
+}
+
+
+@media screen and (max-width: 740px) {
+  .header
+  {
+    
   }
 }
