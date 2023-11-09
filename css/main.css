@@ -987,5 +987,31 @@ Bigger2Smaller
     font-weight: 400;
   }
 }
+.apply__content {
+  margin-top: 3em;
+}
+.apply__content--title {
+  margin-bottom: 3em;
+}
+.apply__content--title h5 {
+  font-weight: 700;
+}
+.apply__content--date h6 {
+  font-weight: 700;
+}
+.apply__content__main--subtitle h6 {
+  margin: 2em 0;
+  font-weight: 600;
+}
+.apply__content__main--p p {
+  font-weight: 400;
+}
+.apply__content__main--p h6 {
+  margin: 2em 0;
+  font-weight: 700;
+}
+.apply__content__main--p ul li {
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=main.css.map */
