@@ -1,7 +1,5 @@
 .terms
 {
-    @media (min-width: 768px)
-    {
         margin: 10em 10em;
         &__title
         {
@@ -61,7 +59,7 @@
                 }
             }
         }
-    }
+    
 
 }
 .dropdown{
@@ -69,4 +67,78 @@
         width: 40px;
         aspect-ratio: 1.4/1;
     }
+}
+
+
+@media screen and (max-width: 968px) {
+.terms
+{
+        margin: 10px 10px;
+        &__title
+        {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            h2{
+                font-weight: 700;
+            }
+        }
+        &__buttons
+        {
+            margin-top: 4em;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &--dropdown
+            {
+                justify-content: center;
+                margin-top: 5px;
+            }
+        }
+        &__content
+        {
+            margin-top: 3em;
+            &--title
+            {
+                margin-bottom: 3em;
+                h5{
+                    font-weight: 700;
+                }
+    
+            }
+            &--date
+            {
+                h6{
+                    font-weight: 700;
+                }
+            }
+            &__main
+            {
+                &--subtitle
+                {
+                    h6{
+                        margin: 2em 0;
+                        font-weight: 600;
+                    }
+                }
+                &--p
+                {
+                    p{
+                        font-weight: 400;
+                    }
+                    h6{
+                        margin: 2em 0;
+                        font-weight: 700; 
+                    }
+                    ul{
+                        li{
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    
+
+}
 }
