@@ -8,11 +8,12 @@
       {
         &--text
         {
-          padding: 1em 10em;
+          padding: 150px 20vw;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          height: 20em;
+          text-align: center;
+          height: 100%;
           width: 100%;
           h1{
             text-align: center;
@@ -178,7 +179,7 @@
   {
       &__info
       {
-        width: 1000px;
+        width: auto;
         
         &--text
         {
@@ -200,6 +201,7 @@
       &__platforms
       {
         flex-direction: column;
+        padding: 1vw;
         background-color: $background-color-1;
         text-align: center;
         justify-content: center;
@@ -231,7 +233,6 @@
           }
           &--stores
             {
-              padding: 5em 5em;
               display: flex;
               flex-direction: row;
               justify-content: center;
