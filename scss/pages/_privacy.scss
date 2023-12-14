@@ -1,38 +1,54 @@
+*{
+    text-wrap: wrap;
+    word-wrap: break-word;
+    white-space: wrap;
+}
 .privacy
 {
     display: flex;
     padding: 1em;
     background-color: #ededed;
-        &__left
+    padding:50px;
+
+        .sidebar
         {
-            width: 25%;
-            background-color: black;
+            width: 20%;
             height: auto;
-            &__buttons
-            {
-                background-color: #ededed;
-                &--left
+        
+            &_btns
                 {
+                    background-color: #ededed;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    a:last-child img{   
+                            scale: 2;
+                    }
                     a{
                         color: black;
-                        border-radius: 40px;
+                        border-radius: 12px;
                         background-color: #ffffff;
                         text-align: center;
                         text-decoration: none;
-                        padding: 1em 4em;
-                        width: 10px;
-
+                        padding: 12px 16px;
+                        width: 80%;
+                        margin-top:12px;
                         img{
                             width: 15px;
                         }
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
                     }
                 }
 
-            }
         }
-        &__right
+        .content
         {
             width: 75%;
+
             &__content
             {
                 &__title
@@ -44,7 +60,7 @@
                         font-weight: 700;
                     }
                 }
-                margin-top: 3em;
+              
                 &--title
                 {
                     margin-bottom: 3em;
@@ -85,9 +101,7 @@
                     }
                 }
             }
-        }
-
-    
+        }   
 
 }
 .dropdown{
@@ -97,76 +111,136 @@
     }
 }
 
+@media screen and (max-width:1550px) {
+    .privacy
+    {
+        display: flex;
+        padding: 1em;
+        background-color: #ededed;
+        padding:50px;
 
-@media screen and (max-width: 968px) {
-.terms
-{
-        margin: 10px 10px;
-        &__title
+            .sidebar
+            {
+                width: 30%;
+            
+            }
+            .content
+            {
+                width: 70%;
+            }   
+
+    }
+}
+
+@media screen and (max-width:991px) {
+    .privacy
+    {
+        display: flex;
+        padding: 1em;
+        background-color: #ededed;
+        padding:50px;
+        flex-direction: column;
+        .sidebar
         {
+            margin-bottom: 50px;
+            width: 100%;
+            height: auto;
             display: flex;
-            justify-content: center;
-            text-align: center;
-            h2{
-                font-weight: 700;
-            }
-        }
-        &__buttons
-        {
-            margin-top: 4em;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            &--dropdown
-            {
-                justify-content: center;
-                margin-top: 5px;
-            }
+            justify-content: center;
+        
+            &_btns
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    background-color: #ededed;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    a:last-child img{   
+                            scale: 2;
+                    }
+                    a{
+                        color: black;
+                        border-radius: 12px;
+                        background-color: #ffffff;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 12px 16px;
+                        width: 80%;
+                        margin-top:12px;
+                        img{
+                            width: 15px;
+                        }
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+
         }
-        &__content
+        .content
         {
-            margin-top: 3em;
-            &--title
+            width: 75%;
+
+            &__content
             {
-                margin-bottom: 3em;
-                h5{
-                    font-weight: 700;
+                &__title
+                {
+                    display: flex;
+                    justify-content: flex-start;
+                    text-align: start;
+                    h2{
+                        font-weight: 700;
+                    }
                 }
-    
-            }
-            &--date
-            {
-                h6{
-                    font-weight: 700;
+              
+                &--title
+                {
+                    margin-bottom: 3em;
+                    h5{
+                        font-weight: 700;
+                    }
+        
                 }
-            }
-            &__main
-            {
-                &--subtitle
+                &--date
                 {
                     h6{
-                        margin: 2em 0;
-                        font-weight: 600;
+                        font-weight: 700;
                     }
                 }
-                &--p
+                &__main
                 {
-                    p{
-                        font-weight: 400;
+                    &--subtitle
+                    {
+                        h6{
+                            margin: 2em 0;
+                            font-weight: 600;
+                        }
                     }
-                    h6{
-                        margin: 2em 0;
-                        font-weight: 700; 
-                    }
-                    ul{
-                        li{
+                    &--p
+                    {
+                        p{
                             font-weight: 400;
+                        }
+                        h6{
+                            margin: 2em 0;
+                            font-weight: 700; 
+                        }
+                        ul{
+                            li{
+                                font-weight: 400;
+                            }
                         }
                     }
                 }
             }
-        }
-    
+        }  
+         
 
-}
+    }
 }

@@ -10,11 +10,12 @@
 
     &__logo
     {
+      width:33%;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
-      margin: 2em 5em;
+      
       &--img{
         width: 200px;
         height: 100%;
@@ -30,10 +31,14 @@
     }
 
     &__routs{
+
+
+      width:33%;
       color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       list-style: none;
       &__ref
       {
@@ -84,12 +89,22 @@
         }
     }
   
+    &__links{
+      scale: 0;
+      opacity: 0;
+      display: flex;
+      transition: 0.5s ease-in-out;
+      list-style-type: none;
+      gap:14px;
+     
+    }
 
     &__socials
     {
+      width:33%;
       display: flex;
       
-      justify-content: space-between;
+      justify-content:flex-end;
       list-style: none;
       border: #fff;
       border-radius: 100px;
@@ -98,23 +113,12 @@
       {
         display: flex;
         justify-content: space-around;
-        margin-right: 2rem;
         margin-bottom: 0;
-        a{
-          color: #fff;
-          list-style: none;
-          margin: 0 6px;
+        img{
+          width: 60px;
+          outline: 1px solid #fff;
           border-radius: 50%;
-          border: 1px solid #fff;
-          width:60px;
-          height: 60px;;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-decoration: none;
-          i{
-            font-size:32px;
-          }
+          margin:0 6px;
         }
       }
       &__copy
@@ -136,11 +140,12 @@ Bigger2Smaller
   {
     background-color: $primary-color;
     height: 200px;
-    padding: 1em 1em;
+    
     align-items: center;
     &__logo{
-      margin: 0 1;
+     
       &--img{
+        width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -172,9 +177,12 @@ Bigger2Smaller
     flex-direction: column;
     padding:0;
     align-items: center;
+   
     height: auto;
     &__logo{
       margin:15px 0;
+      align-items: center;
+      justify-content: center;
     }
 
     &__routs{
@@ -183,6 +191,8 @@ Bigger2Smaller
 
     &__socials{
       padding:0;
+      align-items: center;
+      justify-content: center;
     }
   
   }

@@ -1,7 +1,12 @@
+body{
+  position: relative;
+}
 .header
 {
-  position: relative;
-  background-color: $primary-color;
+  position: fixed;
+  background-color: transparent;
+  box-shadow:  0px -5px 15px rgba(0, 0, 0, 0.35);
+  z-index:2;
   height: 90px;
   width: 100%;
   display: flex;
@@ -57,9 +62,3 @@
 }
 
 
-@media screen and (max-width: 740px) {
-  .header
-  {
-    
-  }
-}
