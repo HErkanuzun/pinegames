@@ -2,7 +2,7 @@
 {
   position: relative;
   background-color: $primary-color;
-  height: 80px;
+  height: 90px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -11,16 +11,17 @@
     &__logo
     {
       color: $secondary-color;
-      width: 200px;
-      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-  
       a
       {
         display: flex;
         text-decoration: none;
+        img{
+          padding: 5px 5px;
+          height: 90px;
+        }
       }
     }
     
@@ -40,10 +41,10 @@
         {
           &:hover
           {
+            color: $button-text-color;
             border-radius: 50px;
-            background-color: #2f149b;
+            background-color: $secondary-color;
             transition: ease-in-out;
-            transition-property: color,background-color;
           }
           color: $secondary-color;
           text-align: center;

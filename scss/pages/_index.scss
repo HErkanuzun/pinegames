@@ -1,20 +1,56 @@
 .main
 {
   display: flex;
-
   &__content
   {
+    &__hero
+    {
+      margin: 2em 3em;
+    display: flex;
+    justify-content: space-evenly;
+    &__left
+    {
+      img{
+        height: auto;
+        width: 30vw;
+      }
+    }
+
+    &__middle
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h1{
+        font-size: x-large;
+      }
+      p{
+        display: block;
+        justify-content: center;
+
+      }
+    }
+    &__right
+    {
+      display: flex;
+      justify-content: end;
+      img{
+        height: auto;
+        width: 30vw;
+      }
+    }
+  }
       &__info
       {
         &--text
         {
-          padding: 150px 20vw;
+          padding: 10vw 10em;
           display: flex;
           flex-direction: column;
           justify-content: center;
           text-align: center;
-          height: 100%;
-          width: 100%;
+
           h1{
             text-align: center;
             font-weight: 800;
@@ -119,7 +155,8 @@
       &__career
       {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        background-color: $background-color-1;
         padding-top: 50px;
         padding-bottom: 50px;
         &__left
@@ -151,8 +188,9 @@
             a{
               &:hover
               {
+                color: #ffffee;
                 border-radius: 50px;
-                background-color: #2f149b;
+                background-color: $button-background-color;
                 transition: ease-in-out;
                 transition-property: color,background-color;
               }
@@ -317,7 +355,7 @@
               &:hover
               {
                 border-radius: 50px;
-                background-color: #2f149b;
+                background-color: $button-background-color;
                 transition: ease-in-out;
                 transition-property: color,background-color;
               }

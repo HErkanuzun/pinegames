@@ -2,14 +2,17 @@
 {
     &__content
     {
-        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5em 20em;
         &--title
         {
             margin-bottom: 3em;
             h5{
                 font-weight: 700;
             }
-
         }
         &--date
         {
@@ -41,6 +44,109 @@
                     }
                 }
             }
+            &--button
+                {
+                    display: flex;
+                    justify-content: center;
+                    margin: 5em 0;
+                    a{
+                      &:hover
+                      {
+                        border-radius: 50px;
+                        background-color: $button-background-color;
+                        transition: ease-in-out;
+                        transition-property: color,background-color;
+                      }
+                      color: #ffffff;
+                      border-radius: 50px;
+                      background-color: $button-background-color-2;
+                      text-align: center;
+                      text-decoration: none;
+                      padding: 20px;
+                    }
+                }
         }
+        
     }
+}
+
+@media screen and (max-width: 768px)
+{
+    .apply
+{
+    &__content
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3em 2em;
+        &--title
+        {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3em;
+            h5{
+                font-weight: 700;
+            }
+        }
+        &--date
+        {
+            display: flex;
+            justify-content: center;
+            h6{
+                font-weight: 700;
+            }
+        }
+        &__main
+        {
+            &--subtitle
+            {
+                h6{
+                    display: flex;
+                    justify-content: center;
+                    margin: 2em 0;
+                    font-weight: 600;
+                }
+            }
+            &--p
+            {
+                p{
+                    font-weight: 400;
+                }
+                h6{
+                    margin: 2em 0;
+                    font-weight: 700; 
+                }
+                ul{
+                    li{
+                        font-weight: 400;
+                    }
+                }
+            }
+            &--button
+                {
+                    display: flex;
+                    justify-content: center;
+                    margin: 5em 0;
+                    a{
+                      &:hover
+                      {
+                        border-radius: 50px;
+                        background-color: $button-background-color;
+                        transition: ease-in-out;
+                        transition-property: color,background-color;
+                      }
+                      color: #ffffff;
+                      border-radius: 50px;
+                      background-color: $button-background-color-2;
+                      text-align: center;
+                      text-decoration: none;
+                      padding: 20px;
+                    }
+                }
+        }
+        
+    }
+}
 }
