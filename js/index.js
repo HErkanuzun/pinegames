@@ -1,6 +1,8 @@
 const footerLinksBtn = document.getElementById("footerLinksBtn");
 const footerLinkList = document.getElementById("footerLinkList");
 
+const menuHamburger = document.querySelector(".menu-hamburger")
+const navLinks = document.querySelector(".nav-links")
 
 footerLinksBtn.addEventListener("click",function(){
 
@@ -25,4 +27,10 @@ var mySwiper = new Swiper ('.swiper-container', {
       reverseDirection: false,
       disableOnInteraction: false,
   },
+})
+
+
+
+menuHamburger.addEventListener('click',()=>{
+navLinks.classList.toggle('mobile-menu')
 })

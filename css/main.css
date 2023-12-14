@@ -5,61 +5,107 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none !important;
 }
 
 body {
   position: relative;
 }
 
-.header {
+.navbar {
+  z-index: 3;
+  padding: 0 1em;
   position: fixed;
-  background-color: transparent;
-  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.35);
-  z-index: 2;
-  height: 90px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0em 4em;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  box-sizing: border-box;
 }
-.header__logo {
-  color: #a8cbad;
+.navbar i {
+  display: none;
+}
+.navbar a {
+  color: black;
+}
+.navbar a img {
+  height: 5vh;
+}
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+.navbar .nav-links {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
-.header__logo a {
+.navbar .nav-links ul {
   display: flex;
-  text-decoration: none;
 }
-.header__logo a img {
-  padding: 5px 5px;
-  height: 90px;
-}
-.header__links {
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
+.navbar .nav-links ul li {
   list-style: none;
-  margin-right: 2rem;
-  margin-bottom: 0;
+  margin: 0 25px;
 }
-.header__links--item {
+.navbar .nav-links ul li a {
+  display: flex;
+  color: black;
+}
+.navbar .nav-links ul li.active a {
+  color: red;
+  margin: 0 25px;
   font-weight: 700;
 }
-.header__links--item a {
-  color: #a8cbad;
-  text-align: center;
-  text-decoration: none;
-  padding: 20px;
-}
-.header__links--item a:hover {
-  color: #fff;
-  border-radius: 50px;
-  background-color: #a8cbad;
-  transition: ease-in-out;
+.navbar .menu-hamburger {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 35px;
 }
 
+.mobile-menu {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .logo {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+  }
+  .navbar .menu-hamburger {
+    display: block;
+  }
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(202, 200, 200, 0.385);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-left: 0;
+  }
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+}
 .footer {
   background-color: #50A55B;
   height: 10rem;
