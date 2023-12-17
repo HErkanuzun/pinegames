@@ -95,6 +95,11 @@
       transition: 0.5s ease-in-out;
       list-style-type: none;
       gap:14px;
+      li{
+        a{
+          color: #fffeee;
+        }
+      }
      
     }
 

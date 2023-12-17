@@ -192,6 +192,9 @@ body {
   list-style-type: none;
   gap: 14px;
 }
+.footer__links li a {
+  color: #fffeee;
+}
 .footer__socials {
   width: 33%;
   display: flex;
