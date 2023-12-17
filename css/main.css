@@ -15,6 +15,7 @@ body {
 .navbar {
   z-index: 3;
   padding: 0 1em;
+  background-color: transparent;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -39,9 +40,14 @@ body {
 .navbar .nav-links {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .navbar .nav-links ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
 }
 .navbar .nav-links ul li {
   list-style: none;
@@ -52,7 +58,7 @@ body {
   color: black;
 }
 .navbar .nav-links ul li.active a {
-  color: red;
+  color: #a8cbad;
   margin: 0 25px;
   font-weight: 700;
 }
@@ -154,6 +160,7 @@ body {
   list-style: none;
 }
 .footer__routs__ref__items--item {
+  cursor: pointer;
   justify-content: center;
   align-items: center;
 }

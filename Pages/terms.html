@@ -12,26 +12,19 @@
 
 </head>
 <body>
-    <section id="header" >
-        <header class="header">
-            <div class="header__logo">
-                <a href="../index.html">
-                    <img src="../img/Pine_Logo_White .png " alt="">
-                </a>
-            </div>
-            <ul class="header__links">
-                <li class="header__links--item">
-                    <a href="about-us.html">ABOUT US</a>
-                </li>
-                <li class="header__links--item">
-                    <a href="games.html">GAMES</a>
-                </li>
-                <li class="header__links--item">
-                    <a href="careers.html">CAREERS</a>
-                </li>
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">
+            <img id="logo" src="../img/Pine_Logo_Green.png" alt="">
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
             </ul>
-        </header>
-    </section>
+        </div>
+        <i class="fa-solid fa-bars fa-xl menu-hamburger" style="color: #050505;" alt=".menu hamburger"></i>
+    </nav>
     <section id="terms">
         <div class="terms">
             <div class="terms__title">
@@ -581,37 +574,43 @@
                 <div class="footer__logo--email">
                     <a href="mailto:herkanuzun@gmail.com">www.pinegames.com</a>
                 </div>
-                
+    
             </div>
             <div class="footer__routs">
+                <ul class="footer__links" id="footerLinkList">
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>S172 Statement</li>
+                </ul>
                 <div class="footer__routs__ref">
                     <ul class="footer__routs__ref__items">
-                        <li class="footer__routs__ref__items--item">
-                            <a href="/pages/terms.html">Terms</a>
-                            <a href="">Privacy</a>
+                        <li id="footerLinksBtn" class="footer__routs__ref__items--item">
+                            Terms Privacy
                         </li>
                         <li class="footer__routs__ref__items--item">
                             <a class="footer__copy">&copy; pinegames</a>
-                        </li>    
+                        </li>
                     </ul>
                 </div>
             </div>
             <ul class="footer__socials">
                 <li>
                     <a href="#">
-                        <img src="../img/Social_fb.png" alt="">
+                        <img src="img/Social_fb.png" alt="">
                     </a>
                     <a href="#">
-                        <img src="../img/Social_ig.png" alt="">
+                        <img src="img/Social_ig.png" alt="">
                     </a>
                     <a href="#">
-                        <img src="../img/Social_in.png" alt="">
+                        <img src="img/Social_in.png" alt="">
                     </a>
                     <a href="#">
-                        <img src="../img/Social_x.png" alt="">
+                        <img src="img/Social_x.png" alt="">
                     </a>
-                
             </ul>
-    
         </footer>
     </div>   
+    </section>
+    <script src="../js/index.js"></script>
+    </body>
+</html>

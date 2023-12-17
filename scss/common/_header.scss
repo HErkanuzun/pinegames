@@ -6,6 +6,7 @@ body{
 {
   z-index: 3;
   padding: 0 1em;
+  background-color: transparent;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -33,9 +34,14 @@ body{
   {
     display: flex;
     align-items: center;
+    justify-content: center;
     ul
     {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: 0;
       li
       {
         list-style: none;
@@ -46,7 +52,7 @@ body{
         margin: 0 25px;
         &.active a
         {
-          color: red;
+          color: $secondary-color;
           margin: 0 25px;
           font-weight: 700;
         }

@@ -31,8 +31,6 @@
     }
 
     &__routs{
-
-
       width:33%;
       color: #fff;
       display: flex;
@@ -56,6 +54,7 @@
           flex-direction: column;
           list-style: none;
           &--item{
+            cursor: pointer;
               justify-content: center;
               align-items: center;
               a{
