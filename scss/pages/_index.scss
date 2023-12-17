@@ -367,13 +367,14 @@
 
             a {
               &:hover {
+                color: #ffffff;
                 border-radius: 50px;
                 background-color: $button-background-color;
                 transition: ease-in-out;
-                transition-property: color, background-color;
+                transition-property: color, #ffffff;
               }
 
-              color: $secondary-color;
+              color: #ffffff;
               border-radius: 50px;
               background-color: $primary-color;
               text-align: center;

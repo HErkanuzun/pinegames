@@ -833,7 +833,7 @@ Bigger2Smaller
     margin: 5em 0;
   }
   .main__career__right--button a {
-    color: #a8cbad;
+    color: #ffffff;
     border-radius: 50px;
     background-color: #50A55B;
     text-align: center;
@@ -841,10 +841,11 @@ Bigger2Smaller
     padding: 20px;
   }
   .main__career__right--button a:hover {
+    color: #ffffff;
     border-radius: 50px;
     background-color: #a8cbad;
     transition: ease-in-out;
-    transition-property: color, background-color;
+    transition-property: color, #ffffff;
   }
 }
 .positions {
