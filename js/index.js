@@ -39,11 +39,36 @@ navLinks.classList.toggle('mobile-menu')
 
 window.addEventListener('scroll', function() {
   var navbar = document.querySelector('.navbar');
-  if (window.scrollY > 100) { // Örneğin, 100 piksel aşağı kaydırdığınızda rengi değiştirelim
-    navbar.style.backgroundColor = '#50A55B'; // Yeni arka plan rengi
-    document.getElementById('logo').src='/img/Pine_Logo_White .png';
+  var logo = document.getElementById('logo');
+  var links = document.querySelectorAll('#liste a');
+
+  if (window.scrollY > 900) { // 400 piksel aşağı kaydırıldığında
+    navbar.style.backgroundColor = '#61C380'; // Navbar arka plan rengini değiştir
+    logo.src = '/img/Pine_Logo_White .png'; // Logo görüntüsünü değiştir
+
+    // Bağlantıların renglerini değiştir ve animasyon sınıfını ekle
+    links.forEach(function(link) {
+      link.style.color = '#ffffee';
+      link.classList.add('color-transition');
+    });
   } else {
     navbar.style.backgroundColor = '#eeeeee'; // Başlangıç rengi
-    document.getElementById('logo').src='/img/Pine_Logo_Green.png';
+    logo.src = '/img/Pine_Logo_Green.png'; // Logo görüntüsünü geri al
+
+    // Bağlantıların renglerini geri al ve animasyon sınıfını kaldır
+    links.forEach(function(link) {
+      link.style.color = '#61C380';
+      link.classList.remove('color-transition');
+    });
   }
+});
+
+
+document.getElementById('link1').addEventListener('click', function() {
+  var targetOffset = 900; // Kaydırılacak hedef noktanın yüksekliği
+
+  window.scrollTo({
+    top: targetOffset,
+    behavior: 'smooth' // Yumuşak geçiş efekti
+  });
 });

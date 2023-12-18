@@ -2,12 +2,12 @@
 .footer
 {
   background-color: $primary-color;
-  height: 10rem;
+  height: 10vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1em 1em;
-
+  padding-left: 20px;
+  padding-right: 20px;
     &__logo
     {
       width:33%;
@@ -15,10 +15,13 @@
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
-      
       &--img{
-        width: 200px;
-        height: 100%;
+        a{
+          img{
+            width: 150px;
+            height: 100%;
+          }
+        }
       }
       &--email
       {
@@ -110,7 +113,6 @@
       
       justify-content:flex-end;
       list-style: none;
-      border: #fff;
       border-radius: 100px;
       align-items: center;
       li
@@ -120,8 +122,6 @@
         margin-bottom: 0;
         img{
           width: 60px;
-          outline: 1px solid #fff;
-          border-radius: 50%;
           margin:0 6px;
         }
       }
@@ -153,6 +153,12 @@ Bigger2Smaller
         display: flex;
         align-items: center;
         justify-content: center;
+        a{
+          img{
+            width: 150px;
+            height: 100%;
+          }
+        }
       }
     }
 
@@ -184,13 +190,14 @@ Bigger2Smaller
    
     height: auto;
     &__logo{
-      margin:15px 0;
+      margin-top:15px;
       align-items: center;
       justify-content: center;
     }
 
     &__routs{
       margin:15px 0;
+      width: 100%;
     }
 
     &__socials{

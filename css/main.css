@@ -14,8 +14,8 @@ body {
 
 .navbar {
   z-index: 3;
-  padding: 0 1em;
-  background-color: #eeeeee;
+  padding: 0 20px;
+  background-color: rgba(192, 192, 192, 0.179);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -28,14 +28,10 @@ body {
   display: none;
 }
 .navbar a {
-  color: black;
+  color: #ffffee;
 }
 .navbar a img {
-  height: 5vh;
-}
-.navbar .logo {
-  font-size: 2em;
-  font-weight: bold;
+  height: 65px;
 }
 .navbar .nav-links {
   display: flex;
@@ -55,7 +51,9 @@ body {
 }
 .navbar .nav-links ul li a {
   display: flex;
-  color: black;
+  font-size: bold;
+  font-weight: 700;
+  color: #61C380;
 }
 .navbar .nav-links ul li.active a {
   color: #a8cbad;
@@ -76,14 +74,27 @@ body {
 @media screen and (max-width: 900px) {
   .navbar {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
   }
   .navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 40px;
     left: 30px;
   }
+  .navbar .logo a img {
+    display: none;
+    height: 70%;
+  }
   .navbar .menu-hamburger {
     display: block;
+    justify-content: end;
+    padding-left: 50px;
   }
   .nav-links {
     top: 0;
@@ -111,14 +122,18 @@ body {
     margin: 25px 0;
     font-size: 1.2em;
   }
+  .navbar .nav-links ul li a {
+    color: #29292b;
+  }
 }
 .footer {
-  background-color: #50A55B;
-  height: 10rem;
+  background-color: #61C380;
+  height: 10vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1em 1em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .footer__logo {
   width: 33%;
@@ -127,8 +142,8 @@ body {
   align-items: flex-start;
   flex-direction: column;
 }
-.footer__logo--img {
-  width: 200px;
+.footer__logo--img a img {
+  width: 150px;
   height: 100%;
 }
 .footer__logo--email a {
@@ -200,7 +215,6 @@ body {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  border: #fff;
   border-radius: 100px;
   align-items: center;
 }
@@ -211,8 +225,6 @@ body {
 }
 .footer__socials li img {
   width: 60px;
-  outline: 1px solid #fff;
-  border-radius: 50%;
   margin: 0 6px;
 }
 .footer__socials__copy {
@@ -225,7 +237,7 @@ Bigger2Smaller
 */
 @media screen and (max-width: 1440px) {
   .footer {
-    background-color: #50A55B;
+    background-color: #61C380;
     height: 200px;
     align-items: center;
   }
@@ -234,6 +246,10 @@ Bigger2Smaller
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .footer__logo--img a img {
+    width: 150px;
+    height: 100%;
   }
   .footer__routs {
     flex-direction: column;
@@ -247,19 +263,20 @@ Bigger2Smaller
 }
 @media screen and (max-width: 1024px) {
   .footer {
-    background-color: #50A55B;
+    background-color: #61C380;
     flex-direction: column;
     padding: 0;
     align-items: center;
     height: auto;
   }
   .footer__logo {
-    margin: 15px 0;
+    margin-top: 15px;
     align-items: center;
     justify-content: center;
   }
   .footer__routs {
     margin: 15px 0;
+    width: 100%;
   }
   .footer__socials {
     padding: 0;
@@ -280,11 +297,11 @@ Bigger2Smaller
   text-align: start;
 }
 .games__info--left h1 {
-  color: black;
+  color: #29292b;
   text-align: center;
 }
 .games__info--left p {
-  color: black;
+  color: #29292b;
   justify-content: center;
   text-align: start;
 }
@@ -320,11 +337,11 @@ Bigger2Smaller
   justify-content: space-evenly;
 }
 .games__platforms__left--text h1 {
-  color: black;
+  color: #29292b;
   text-align: center;
 }
 .games__platforms__left--text p {
-  color: black;
+  color: #29292b;
   justify-content: center;
   text-align: end;
 }
@@ -377,11 +394,11 @@ Bigger2Smaller
     text-align: start;
   }
   .games__info--left h1 {
-    color: black;
+    color: #29292b;
     text-align: center;
   }
   .games__info--left p {
-    color: black;
+    color: #29292b;
     justify-content: center;
     text-align: start;
   }
@@ -417,11 +434,11 @@ Bigger2Smaller
     justify-content: space-evenly;
   }
   .games__platforms__left--text h1 {
-    color: black;
+    color: #29292b;
     text-align: center;
   }
   .games__platforms__left--text p {
-    color: black;
+    color: #29292b;
     justify-content: center;
     text-align: end;
   }
@@ -474,11 +491,11 @@ Bigger2Smaller
     text-align: start;
   }
   .games__info--left h1 {
-    color: black;
+    color: #29292b;
     text-align: center;
   }
   .games__info--left p {
-    color: black;
+    color: #29292b;
     justify-content: center;
     text-align: start;
   }
@@ -514,11 +531,11 @@ Bigger2Smaller
     justify-content: space-evenly;
   }
   .games__platforms__left--text h1 {
-    color: black;
+    color: #29292b;
     text-align: center;
   }
   .games__platforms__left--text p {
-    color: black;
+    color: #29292b;
     justify-content: center;
     text-align: center;
   }
@@ -557,22 +574,25 @@ Bigger2Smaller
     width: 20em;
   }
 }
+.main {
+  padding-top: 10vh;
+}
 .main_hero {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .main_hero h1 {
-  width: 50%;
+  width: 46%;
   text-align: right;
   font-weight: 500;
   font-size: 32px;
   margin-left: 15px;
 }
 .main_hero .swiper-container {
-  width: 50%;
+  width: 54%;
   max-width: 940px;
-  height: 100vh;
+  height: 90vh;
   margin: 0 auto;
 }
 .main_hero .swiper-container::after {
@@ -601,19 +621,23 @@ Bigger2Smaller
   font-size: 32px;
   margin-left: 15px;
 }
+.main__info {
+  background-color: #f5f5f5;
+}
 .main__info--text {
   padding: 10vw 10em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 90vh;
 }
 .main__info--text h1 {
   text-align: center;
   font-weight: 800;
 }
 .main__info--text p {
-  color: black;
+  color: #29292b;
   text-align: center;
   font-weight: 400;
 }
@@ -621,72 +645,31 @@ Bigger2Smaller
   text-align: center;
   font-weight: 600;
 }
-.main__platforms {
-  display: flex;
-  background-color: #ffffee;
+.main__info--button {
+  padding: 4em 0;
+}
+.main__info--button a {
+  color: #ffffff;
+  border-radius: 50px;
+  background-color: #61C380;
   text-align: center;
-  justify-content: space-evenly;
-  padding: 5em 5em;
-}
-.main__platforms__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main__platforms__left--text {
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.main__platforms__left--text h1 {
-  color: black;
-  text-align: center;
-}
-.main__platforms__left--text p {
-  color: black;
-  justify-content: center;
-  text-align: start;
-}
-.main__platforms__left--text a {
-  font-weight: 600;
   text-decoration: none;
-  color: inherit;
-  text-align: center;
+  padding: 20px;
 }
-.main__platforms__left--stores {
-  padding: 5em 5em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.main__platforms__left--stores-1 li {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-.main__platforms__left--stores-1 li a img {
-  height: 4em;
-  width: 8em;
-  min-width: 4em;
-}
-.main__platforms__left--stores-2 li {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-.main__platforms__left--stores-2 li a img {
-  height: 4em;
-  width: 8em;
-}
-.main__platforms__right--img img {
-  height: 38em;
-  width: 20em;
+.main__info--button a:hover {
+  color: #ffffff;
+  border-radius: 50px;
+  background-color: #ffffff;
+  transition: ease-in-out;
+  transition-property: color, #ffffff;
 }
 .main__career {
-  display: flex;
+  display: none;
   justify-content: center;
-  background-color: #ffffee;
+  background-color: #f5f5f5;
   padding-top: 50px;
   padding-bottom: 50px;
+  height: 100vh;
 }
 .main__career__left img {
   display: flex;
@@ -701,11 +684,11 @@ Bigger2Smaller
   align-items: center;
 }
 .main__career__right h1 {
-  color: black;
+  color: #29292b;
   font-weight: 500;
 }
 .main__career__right p {
-  color: black;
+  color: #29292b;
   text-align: center;
 }
 .main__career__right--button {
@@ -714,7 +697,7 @@ Bigger2Smaller
 .main__career__right--button a {
   color: #a8cbad;
   border-radius: 50px;
-  background-color: #50A55B;
+  background-color: #61C380;
   text-align: center;
   text-decoration: none;
   padding: 20px;
@@ -722,12 +705,15 @@ Bigger2Smaller
 .main__career__right--button a:hover {
   color: #ffffee;
   border-radius: 50px;
-  background-color: #a8cbad;
+  background-color: #ffffff;
   transition: ease-in-out;
   transition-property: color, background-color;
 }
 
 @media screen and (max-width: 768px) {
+  .main .swiper-slide {
+    font-size: small;
+  }
   .main__info {
     width: auto;
   }
@@ -741,9 +727,27 @@ Bigger2Smaller
     font-weight: 800;
   }
   .main__info--text p {
-    color: black;
+    color: #29292b;
     text-align: center;
     font-weight: 400;
+  }
+  .main__info--button {
+    display: none;
+  }
+  .main__info--button a {
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #61C380;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+  }
+  .main__info--button a:hover {
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #ffffff;
+    transition: ease-in-out;
+    transition-property: color, #ffffff;
   }
   .main__platforms {
     flex-direction: column;
@@ -762,11 +766,11 @@ Bigger2Smaller
     justify-content: space-evenly;
   }
   .main__platforms__left--text h1 {
-    color: black;
+    color: #29292b;
     text-align: center;
   }
   .main__platforms__left--text p {
-    color: black;
+    color: #29292b;
     justify-content: center;
     text-align: center;
   }
@@ -809,6 +813,7 @@ Bigger2Smaller
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 80px;
   }
   .main__career__left img {
     display: flex;
@@ -822,11 +827,11 @@ Bigger2Smaller
     align-items: center;
   }
   .main__career__right h1 {
-    color: black;
+    color: #29292b;
     font-weight: 500;
   }
   .main__career__right p {
-    color: black;
+    color: #29292b;
     text-align: center;
   }
   .main__career__right--button {
@@ -835,7 +840,7 @@ Bigger2Smaller
   .main__career__right--button a {
     color: #ffffff;
     border-radius: 50px;
-    background-color: #50A55B;
+    background-color: #61C380;
     text-align: center;
     text-decoration: none;
     padding: 20px;
@@ -843,12 +848,13 @@ Bigger2Smaller
   .main__career__right--button a:hover {
     color: #ffffff;
     border-radius: 50px;
-    background-color: #a8cbad;
+    background-color: #ffffff;
     transition: ease-in-out;
     transition-property: color, #ffffff;
   }
 }
 .positions {
+  padding: 10vh;
   padding-bottom: 5em;
 }
 .positions__title {
@@ -871,7 +877,7 @@ Bigger2Smaller
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #f5f5f5;
   border-radius: 30px;
   width: 80vw;
   box-shadow: 2px 3px 4px 4px rgb(233, 231, 231);
@@ -905,14 +911,14 @@ Bigger2Smaller
 .positions__cards__card--button a {
   color: #a8cbad;
   border-radius: 50px;
-  background-color: #50A55B;
+  background-color: #61C380;
   text-align: center;
   text-decoration: none;
   padding: 10px 25px;
 }
 .positions__cards__card--button a:hover {
   border-radius: 50px;
-  background-color: #a8cbad;
+  background-color: #ffffff;
   transition: ease-in-out;
   transition-property: color, background-color;
 }
@@ -927,7 +933,7 @@ Bigger2Smaller
   display: flex;
   padding: 1em;
   background-color: #ededed;
-  padding: 50px;
+  padding: 10vh;
 }
 .privacy .sidebar {
   width: 20%;
@@ -1092,6 +1098,9 @@ Bigger2Smaller
     font-weight: 400;
   }
 }
+.apply {
+  padding: 5vh;
+}
 .apply__content {
   display: flex;
   justify-content: center;
@@ -1130,14 +1139,14 @@ Bigger2Smaller
 .apply__content__main--button a {
   color: #ffffff;
   border-radius: 50px;
-  background-color: #3c7f45;
+  background-color: #f5f5f5;
   text-align: center;
   text-decoration: none;
   padding: 20px;
 }
 .apply__content__main--button a:hover {
   border-radius: 50px;
-  background-color: #a8cbad;
+  background-color: #ffffff;
   transition: ease-in-out;
   transition-property: color, background-color;
 }
@@ -1189,14 +1198,14 @@ Bigger2Smaller
   .apply__content__main--button a {
     color: #ffffff;
     border-radius: 50px;
-    background-color: #3c7f45;
+    background-color: #f5f5f5;
     text-align: center;
     text-decoration: none;
     padding: 20px;
   }
   .apply__content__main--button a:hover {
     border-radius: 50px;
-    background-color: #a8cbad;
+    background-color: #ffffff;
     transition: ease-in-out;
     transition-property: color, background-color;
   }

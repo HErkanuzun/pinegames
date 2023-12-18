@@ -5,8 +5,8 @@ body{
 .navbar
 {
   z-index: 3;
-  padding: 0 1em;
-  background-color: #eeeeee;
+  padding: 0 20px;
+  background-color: rgba(192, 192, 192, 0.179);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -19,16 +19,11 @@ body{
     display: none;
   }
   a{
-    color: black;
+    color: #ffffee;
     img
     {
-      height: 5vh;
+      height: 65px;
     }
-  }
-  & .logo
-  {
-    font-size: 2em;
-    font-weight: bold;
   }
   & .nav-links
   {
@@ -47,7 +42,9 @@ body{
         list-style: none;
         a{
           display: flex;
-          color: black;
+          font-size: bold;
+          font-weight: 700;
+          color: #61C380;
         }
         margin: 0 25px;
         &.active a
@@ -74,15 +71,30 @@ body{
 @media screen and (max-width: 900px){
   .navbar{
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
     & .logo
     {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       top: 40px;
       left: 30px;
+      a{
+        img{
+          display: none;
+          height: 70%;
+        }
+      }
     }
 
     & .menu-hamburger{
       display: block;
+      justify-content: end;
+      padding-left: 50px;
     }
   }
   .nav-links{
@@ -111,6 +123,9 @@ body{
     {
       margin: 25px 0;
       font-size: 1.2em;
+      a{
+        color: $p-color;
+      }
     }
   }
 
