@@ -2,12 +2,14 @@
 .footer
 {
   background-color: $primary-color;
-  height: 10vh;
+
+  padding:25px 0;;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+ 
     &__logo
     {
       width:33%;
@@ -23,14 +25,13 @@
           }
         }
       }
-      &--email
-      {
-        a{
-          color: $secondary-color;
-          font-weight: 300;
-          text-decoration: none;
-        }
-      }
+   
+    }
+    
+    
+    &__copy{
+
+      color:#fff;
     }
 
     &__routs{
@@ -48,24 +49,21 @@
         margin-right: 2rem;
         margin-bottom: 0;
         list-style: none;
+        flex-direction: column;
         
         &__items
         {
+          padding: 0;
+          width: 100%;
+          list-style-type: none;
           display: flex;
-          justify-content: center;
           align-items: center;
-          flex-direction: column;
-          list-style: none;
-          &--item{
-            cursor: pointer;
-              justify-content: center;
-              align-items: center;
-              a{
-                font-weight: 100;
-                text-decoration: none;
-                color: #fff;
-              }
-        }
+          font-size: 18px;
+          justify-content: space-between;
+          a{
+            text-decoration: none;
+            color:#fff;
+          }
     
         } 
       }

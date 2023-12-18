@@ -19,9 +19,9 @@ footerLinksBtn.addEventListener("click",function(){
 var mySwiper = new Swiper ('.swiper-container', {
   direction: 'vertical',
   effect: 'slide',
-  slidesPerView: 12,
+  slidesPerView: 8,
   loop: true,
-   speed: 700,
+  speed: 700,
   autoplay: {
       delay: 1,
       reverseDirection: false,
@@ -48,8 +48,9 @@ window.addEventListener('scroll', function() {
 
     // Bağlantıların renglerini değiştir ve animasyon sınıfını ekle
     links.forEach(function(link) {
+      navbar.classList.add('transition');
       link.style.color = '#ffffee';
-      link.classList.add('color-transition');
+
     });
   } else {
     navbar.style.backgroundColor = '#eeeeee'; // Başlangıç rengi
@@ -57,8 +58,9 @@ window.addEventListener('scroll', function() {
 
     // Bağlantıların renglerini geri al ve animasyon sınıfını kaldır
     links.forEach(function(link) {
+      navbar.classList.remove('transition');
       link.style.color = '#61C380';
-      link.classList.remove('color-transition');
+  
     });
   }
 });
