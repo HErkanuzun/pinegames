@@ -4,7 +4,7 @@ const footerLinkList = document.getElementById("footerLinkList");
 const menuHamburger = document.querySelector(".menu-hamburger");
 const navLinks = document.querySelector(".nav-links");
 
-footerLinksBtn.addEventListener("click",function(){
+footerLinksBtn?.addEventListener("click",function(){
 
   if(footerLinkList.style.opacity==="0"){
     footerLinkList.style.opacity = "1";
@@ -16,18 +16,21 @@ footerLinksBtn.addEventListener("click",function(){
  
 });
 
-var mySwiper = new Swiper ('.swiper-container', {
-  direction: 'vertical',
-  effect: 'slide',
-  slidesPerView: 8,
-  loop: true,
-  speed: 700,
-  autoplay: {
-      delay: 1,
-      reverseDirection: false,
-      disableOnInteraction: false,
-  },
-});
+if(typeof Swiper !== 'undefined'){
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    effect: 'slide',
+    slidesPerView: 8,
+    loop: true,
+    speed: 700,
+    autoplay: {
+        delay: 1,
+        reverseDirection: false,
+        disableOnInteraction: false,
+    },
+  });
+  
+}
 
 
 

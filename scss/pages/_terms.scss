@@ -5,11 +5,11 @@
 }
 .terms
 {
-
     display: flex;
     padding: 1em;
     background-color: #ededed;
     padding:10vh;
+
         .sidebar
         {
             width: 20%;
@@ -21,7 +21,7 @@
                     display: flex;
                     flex-direction: column;
                     
-                    a:last-child img{   
+                    a:first-child img{   
                             scale: 2;
                     }
                     a{
@@ -45,9 +45,10 @@
                 }
 
         }
-        &__content
+        .content
         {
             width: 75%;
+
             &__content
             {
                 &__title
@@ -111,7 +112,7 @@
 }
 
 @media screen and (max-width:1550px) {
-    .terms
+    .privacy
     {
         display: flex;
         padding: 1em;
@@ -132,7 +133,7 @@
 }
 
 @media screen and (max-width:991px) {
-    .terms
+    .privacy
     {
         display: flex;
         padding: 1em;
