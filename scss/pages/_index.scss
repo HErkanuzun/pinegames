@@ -5,7 +5,7 @@ padding-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     h1{
       width: 46%;
       text-align: right;
@@ -77,24 +77,31 @@ padding-top: 10vh;
       }
     }
     &--button
-    {
-      padding: 4em 0;
-      a {
-        &:hover {
-          color: #ffffff;
-          border-radius: 50px;
-          background-color: $button-background-color;
-          transition: ease-in-out;
-          transition-property: color, #ffffff;
-        }
-
-        color: #ffffff;
+    {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        
+        a{
+            &:hover
+            {
+                border-radius: 50px;
+                transition: 0.3s ease-in-out;
+                color: $primary-color;
+                background-color: #fff;
+           
+               
+            }
+        color:#fff;;
         border-radius: 50px;
         background-color: $primary-color;
         text-align: center;
         text-decoration: none;
-        padding: 20px;
-      }
+        padding: 10px 50px;
+        }
     }
   }
 

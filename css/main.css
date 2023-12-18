@@ -656,22 +656,26 @@ Bigger2Smaller
   font-weight: 600;
 }
 .main__info--button {
-  padding: 4em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 10px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 .main__info--button a {
-  color: #ffffff;
+  color: #fff;
   border-radius: 50px;
   background-color: #61C380;
   text-align: center;
   text-decoration: none;
-  padding: 20px;
+  padding: 10px 50px;
 }
 .main__info--button a:hover {
-  color: #ffffff;
   border-radius: 50px;
-  background-color: #ffffff;
-  transition: ease-in-out;
-  transition-property: color, #ffffff;
+  transition: 0.3s ease-in-out;
+  color: #61C380;
+  background-color: #fff;
 }
 .main__career {
   display: none;
