@@ -126,26 +126,23 @@
                 }
             }
             &--button
-                {
-                    display: flex;
-                    justify-content: center;
-                    margin: 5em 0;
-                    a{
-                      &:hover
-                      {
+                {         
+                display: flex;
+                    a {
+                      &:hover {
+                        color: green;
                         border-radius: 50px;
                         background-color: $button-background-color;
                         transition: ease-in-out;
-                        transition-property: color,background-color;
+                        transition-property: color, #ffffff;
                       }
                       color: #ffffff;
                       border-radius: 50px;
-                      background-color: $button-background-color-2;
+                      background-color: $primary-color;
                       text-align: center;
                       text-decoration: none;
                       padding: 20px;
-                    }
-                }
+                    }}
         }
         
     }
