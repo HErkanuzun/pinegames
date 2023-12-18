@@ -929,6 +929,7 @@ Bigger2Smaller
   }
 }
 .positions {
+  background-color: #f5f5f5;
   padding: 10vh;
   padding-bottom: 5em;
 }
@@ -949,12 +950,12 @@ Bigger2Smaller
 }
 .positions__cards__card {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #ffffee;
   border-radius: 30px;
-  width: 80vw;
+  width: 50vw;
   box-shadow: 2px 3px 4px 4px rgb(233, 231, 231);
   margin: 1em;
 }
@@ -981,21 +982,22 @@ Bigger2Smaller
   justify-content: center;
   align-items: center;
   margin: 15px 10px;
-  font-weight: 550;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 .positions__cards__card--button a {
-  color: #a8cbad;
+  color: #fff;
   border-radius: 50px;
   background-color: #61C380;
   text-align: center;
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 10px 50px;
 }
 .positions__cards__card--button a:hover {
   border-radius: 50px;
-  background-color: #ffffff;
-  transition: ease-in-out;
-  transition-property: color, background-color;
+  transition: 0.3s ease-in-out;
+  color: #61C380;
+  background-color: #fff;
 }
 
 * {

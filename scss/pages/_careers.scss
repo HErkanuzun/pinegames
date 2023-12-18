@@ -1,5 +1,6 @@
 .positions
 {
+    background-color: #f5f5f5;
     padding:10vh;
     padding-bottom: 5em;
         &__title
@@ -21,12 +22,12 @@
             &__card
             {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 text-align: center;
                 align-items: center;
-                background-color: $background-color-2;
+                background-color: $background-color-1;
                 border-radius: 30px;
-                width: 80vw;
+                width: 50vw;
                 box-shadow: 2px 3px 4px 4px rgb(233, 231, 231);
                 margin: 1em;
                 &:hover
@@ -56,21 +57,25 @@
                     justify-content: center;
                     align-items: center;
                     margin: 15px 10px;
-                    font-weight: 550;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    
                     a{
                         &:hover
                         {
                             border-radius: 50px;
-                            background-color:   $button-background-color;
-                            transition: ease-in-out;
-                            transition-property: color,background-color;
+                            transition: 0.3s ease-in-out;
+                            color: $primary-color;
+                            background-color: #fff;
+                       
+                           
                         }
-                    color: $secondary-color;
+                    color:#fff;;
                     border-radius: 50px;
                     background-color: $primary-color;
                     text-align: center;
                     text-decoration: none;
-                    padding: 10px 25px;
+                    padding: 10px 50px;
                     }
                 }
             }
