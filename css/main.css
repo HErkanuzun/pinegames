@@ -391,7 +391,7 @@ Bigger2Smaller
   }
   .footer__routs {
     width: 100%;
-    padding-left: 0;
+    margin-left: 0px;
     padding-bottom: 25px;
   }
   .footer__socials {
