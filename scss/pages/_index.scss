@@ -1,75 +1,49 @@
 .main {
 
-padding-top: 10vh;
+
   &_hero{
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    justify-content: end;
+    flex-direction: column;
+    height:100vh;
+    background-color: #05C15D;
+    padding-inline-start: 0;
     h1{
-      width: 46%;
-      text-align: right;
-      font-weight: 500;
-      font-size:32px;
-      margin-left: 15px;;
-    }
-
-    .swiper-container {
-      width: 54%;
-      max-width: 940px;
-      height: 90vh;
-      margin: 0 auto;
-
-      &::after{
-        content:'';
-        position:absolute;
-        top:0;
-        width: 100%;
-        height: 40vh;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
-
-        z-index: 2;
-      }
-
-      &::before{
-        content:'';
-        position:absolute;
-        bottom:0;
-        width: 100%;
-        height: 40vh;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1));
-
-        z-index: 2;
-      }
-    }
-    .swiper-wrapper {
-      transition-timing-function: linear;
-      }
-    p{
-      font-weight: 500;
-      font-size:32px;
-      margin-left: 15px;;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 228px;
+      line-height: 180px;
+      text-indent: 40px;
     }
   }
   &__info {
-    background-color: $background-color-2;
+    border-bottom: rgba(5,193,9,0.3) solid;
+    background-color: #ffffff;
+    height: 600px;
     &--text {
-      padding: 10vw 10em;
+      background-color: #ffffff;
+      padding-top: 190px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       text-align: center;
-      height: 90vh;
       width: 80%;
       h1 {
+        background-color: #ffffff;
+        padding-bottom: 23px;
         text-align: center;
-        font-weight: 800;
+        color: $h1-color;
+        font-weight: bold;
       }
 
       p {
+        background-color: #ffffff;
         color: $p-color;
+        width: 70%;
+        justify-content: center;
         text-align: center;
-        font-weight: 400;
+        font-weight: regular;
+        padding-bottom: 23px;
       }
 
       span {
@@ -84,7 +58,6 @@ padding-top: 10vh;
         align-items: center;
         margin: 15px 10px;
         font-weight: 900;
-        text-transform: uppercase;
         a{
             &:hover
             {
@@ -92,10 +65,8 @@ padding-top: 10vh;
                 transition: 0.3s ease-in-out;
                 color: $primary-color;
                 background-color: #fff;
-           
-               
             }
-        color:#fff;;
+        color:#ffffff;
         border-radius: 50px;
         background-color: $primary-color;
         text-align: center;
@@ -106,41 +77,33 @@ padding-top: 10vh;
   }
 
 
-  &__career {
-    display: none;
-    justify-content: center;
-    background-color: $background-color-2;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 100vh;
-    &__left {
-      img {
-        display: flex;
-        height: 467px;
-        width: 526px;
-        max-width: 100%;
-      }
-    }
-
-    &__right {
+  &__careers {
+    &--text {
+      padding-top: 190px;
+      background-color: #ffffff;
       display: flex;
-      justify-content: center;
+      height: 600px;
+      width: auto;
       flex-direction: column;
       align-items: center;
-
       h1 {
+        background-color: #ffffff;
         color: $h1-color;
-        font-weight: 500;
+        font-weight: bold;
+        padding-bottom: 23px;
       }
 
       p {
+        background-color: #ffffff;
+        width: 40%;
         color: $p-color;
+        font-weight: regular;
         text-align: center;
       }
 
       &--button {
         margin: 5em 0;
-
+        display: none;
         a {
           &:hover {
             color: #ffffee;
@@ -148,9 +111,11 @@ padding-top: 10vh;
             background-color: $button-background-color;
             transition: ease-in-out;
             transition-property: color, background-color;
+            font-weight: bold;
           }
 
           color: $secondary-color;
+          font-weight: bold;
           border-radius: 50px;
           background-color: $primary-color;
           text-align: center;
@@ -162,467 +127,33 @@ padding-top: 10vh;
   }
 
 }
-
-@media screen and (max-width: 1200px) {
-
-  .main {
-    .swiper-slide{
-      font-size: small;
-    }
-    &_hero{
+@media screen and (max-width: 900px){
+  .main
+  {
+    &_hero
+    {
       h1{
-        width: 40%;
-      }
-      .swiper-container {
-        width: 60%;;
-      }
-      h1, p{
-        font-size:24px;
+        width: 560px;
+        word-wrap: nowrap;
+        text-align: end;
       }
     }
-    &__info {
-      width: auto;
-
-      &--text {
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-        h1 {
-          text-align: center;
-          font-weight: 800;
-          margin-bottom:50px;
-        }
-
-        p {
-          color: $p-color;
-          text-align: center;
-          font-weight: 400;
-          width:70vw;
-        }
-      }
-      &--button
-      {
-        display: flex;
-        a {
-          &:hover {
-            color: #ffffff;
-            border-radius: 50px;
-            background-color: $button-background-color;
-            transition: ease-in-out;
-            transition-property: color, #ffffff;
-          }
-
-          color: #ffffff;
-          border-radius: 50px;
-          background-color: $primary-color;
-          text-align: center;
-          text-decoration: none;
-          padding: 20px;
-        }
-      }
-    }
-
-    &__platforms {
-      flex-direction: column;
-      padding: 1vw;
-      background-color: $background-color-1;
-      text-align: center;
-      justify-content: center;
-
-      &__left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &--text {
-          flex-direction: column;
-          justify-content: space-evenly;
-
-          h1 {
-            color: $h1-color;
-            text-align: center;
-          }
-
-          p {
-            color: $p-color;
-            justify-content: center;
-            text-align: center;
-          }
-
-          a {
-            font-weight: 600;
-            text-decoration: none;
-            color: inherit;
-            text-align: center;
-          }
-        }
-
-        &--stores {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          &-1 {
-            li {
-              display: flex;
-              justify-content: center;
-              list-style: none;
-
-              a {
-                img {
-                  height: 4em;
-                  width: 8em;
-                  min-width: 4em;
-                }
-              }
-            }
-          }
-
-          &-2 {
-            li {
-              display: flex;
-              justify-content: center;
-              list-style: none;
-
-              a {
-                img {
-                  height: 4em;
-                  width: 8em;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &__right {
-        &--img {
-          img {
-            height: 38em;
-            width: 20em;
-          }
-        }
-      }
-
-
-    }
-
-    &__career {
-      flex-direction: column;
-      justify-content: center;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      width: 80px;
-      &__left {
-        img {
-          display: flex;
-          width: 100%;
-          aspect-ratio: 1.8/1;
-        }
-      }
-
-      &__right {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        h1 {
-          color: $h1-color;
-          font-weight: 500;
-        }
-
-        p {
-          color: $p-color;
-          text-align: center;
-        }
-
-        &--button {
-          margin: 5em 0;
-
-          a {
-            &:hover {
-              color: #ffffff;
-              border-radius: 50px;
-              background-color: $button-background-color;
-              transition: ease-in-out;
-              transition-property: color, #ffffff;
-            }
-
-            color: #ffffff;
-            border-radius: 50px;
-            background-color: $primary-color;
-            text-align: center;
-            text-decoration: none;
-            padding: 20px;
-          }
-        }
-      }
-    }
-
   }
-
 }
 @media screen and (max-width: 768px) {
 
     .main {
-      .swiper-slide{
-        font-size: small;
-      }
-      &_hero{
-        h1{
-          width: 44%;
-        }
-        .swiper-container {
-          width: 56%;;
-        }
-        h1, p{
-          font-size:24px;
-        }
-      }
-      &__info {
-        width: auto;
-
-        &--text {
-          flex-direction: column;
-          height: 100vh;
-          align-items: center;
-          justify-content: center;
-
-          h1 {
-            text-align: center;
-            font-weight: 800;
-            margin-bottom:50px;
-          }
-
-          p {
-            color: $p-color;
-            text-align: center;
-            font-weight: 400;
-            width:60vw;
-          }
-        }
-        &--button
-        {
-          width: 500px;
-          display: flex;
-          a {
-            &:hover {
-              color: #ffffff;
-              border-radius: 50px;
-              background-color: $button-background-color;
-              transition: ease-in-out;
-              transition-property: color, #ffffff;
-            }
-
-            color: #ffffff;
-            border-radius: 50px;
-            background-color: $primary-color;
-            text-align: center;
-            text-decoration: none;
-            padding: 20px;
-          }
-        }
-      }
-
-      &__platforms {
-        flex-direction: column;
-        padding: 1vw;
-        background-color: $background-color-1;
-        text-align: center;
-        justify-content: center;
-
-        &__left {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          &--text {
-            flex-direction: column;
-            justify-content: space-evenly;
-
-            h1 {
-              color: $h1-color;
-              text-align: center;
-            }
-
-            p {
-              color: $p-color;
-              justify-content: center;
-              text-align: center;
-            }
-
-            a {
-              font-weight: 600;
-              text-decoration: none;
-              color: inherit;
-              text-align: center;
-            }
-          }
-
-          &--stores {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            &-1 {
-              li {
-                display: flex;
-                justify-content: center;
-                list-style: none;
-
-                a {
-                  img {
-                    height: 4em;
-                    width: 8em;
-                    min-width: 4em;
-                  }
-                }
-              }
-            }
-
-            &-2 {
-              li {
-                display: flex;
-                justify-content: center;
-                list-style: none;
-
-                a {
-                  img {
-                    height: 4em;
-                    width: 8em;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        &__right {
-          &--img {
-            img {
-              height: 38em;
-              width: 20em;
-            }
-          }
-        }
-
-
-      }
-
-      &__career {
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        width: 80px;
-        &__left {
-          img {
-            display: flex;
-            width: 100%;
-            aspect-ratio: 1.8/1;
-          }
-        }
-
-        &__right {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          h1 {
-            color: $h1-color;
-            font-weight: 500;
-          }
-
-          p {
-            color: $p-color;
-            text-align: center;
-          }
-
-          &--button {
-            margin: 5em 0;
-
-            a {
-              &:hover {
-                color: #ffffff;
-                border-radius: 50px;
-                background-color: $button-background-color;
-                transition: ease-in-out;
-                transition-property: color, #ffffff;
-              }
-
-              color: #ffffff;
-              border-radius: 50px;
-              background-color: $primary-color;
-              text-align: center;
-              text-decoration: none;
-              padding: 20px;
-            }
-          }
-        }
-      }
-
+      padding: 0;
     }
 
 }
+@media screen and (max-width: 600px) {
+.main
+{
+  &_hero
+  {
 
-@media screen and (max-width: 520px) {
-
-  .main {
-    .swiper-slide{
-      font-size: small;
-    }
-    &_hero{
-      h1{
-        width: 25%;
-      }
-      .swiper-container {
-        width: 75%;;
-      }
-      h1, p{
-        font-size:18px;
-      }
-    }
-    &__info {
-      width: auto;
-
-      &--text {
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-
-        h1 {
-          text-align: center;
-          font-weight: 800;
-          margin-bottom:50px;
-          width: 200px;
-        }
-
-        p {
-          color: $p-color;
-          text-align: center;
-          font-weight: 400;
-          width:80vw;
-        }
-      }
-      &--button
-      {
-        a {
-          &:hover {
-            color: #ffffff;
-            border-radius: 50px;
-            background-color: $button-background-color;
-            transition: ease-in-out;
-            transition-property: color, #ffffff;
-          }
-
-          color: #ffffff;
-          border-radius: 50px;
-          background-color: $primary-color;
-          text-align: center;
-          text-decoration: none;
-          padding: 20px;
-        }
-      }
-    }
   }
+
+}
 }

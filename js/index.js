@@ -16,7 +16,7 @@ footerLinksBtn?.addEventListener("click",function(){
  
 });
 
-if(typeof Swiper !== 'undefined'){
+/* if(typeof Swiper !== 'undefined'){
   var mySwiper = new Swiper ('.swiper-container', {
     direction: 'vertical',
     effect: 'slide',
@@ -30,7 +30,7 @@ if(typeof Swiper !== 'undefined'){
     },
   });
   
-}
+} */
 
 
 
@@ -45,24 +45,24 @@ window.addEventListener('scroll', function() {
   var logo = document.getElementById('logo');
   var links = document.querySelectorAll('#liste a');
 
-  if (window.scrollY > 900) { // 400 piksel aşağı kaydırıldığında
-    navbar.style.backgroundColor = '#61C380'; // Navbar arka plan rengini değiştir
-    logo.src = '/img/Pine_Logo_White .png'; // Logo görüntüsünü değiştir
+  if (window.scrollY > 880) { // 400 piksel aşağı kaydırıldığında
+    navbar.style.backgroundColor = '#05C15D'; // Navbar arka plan rengini değiştir
+    logo.src = '/img/Logo_White_01.png'; // Logo görüntüsünü değiştir
 
     // Bağlantıların renglerini değiştir ve animasyon sınıfını ekle
     links.forEach(function(link) {
       navbar.classList.add('transition');
-      link.style.color = '#ffffee';
+      link.style.color = '#ffffff';
 
     });
   } else {
-    navbar.style.backgroundColor = '#eeeeee'; // Başlangıç rengi
-    logo.src = '/img/Pine_Logo_Green.png'; // Logo görüntüsünü geri al
+    navbar.style.backgroundColor = '#05C15D'; // Başlangıç rengi
+    logo.src = '/img/Logo_White_01.png'; // Logo görüntüsünü geri al
 
     // Bağlantıların renglerini geri al ve animasyon sınıfını kaldır
     links.forEach(function(link) {
       navbar.classList.remove('transition');
-      link.style.color = '#61C380';
+      link.style.color = '#ffffff';
   
     });
   }
@@ -70,7 +70,7 @@ window.addEventListener('scroll', function() {
 
 
 document.getElementById('link1').addEventListener('click', function() {
-  var targetOffset = 900; // Kaydırılacak hedef noktanın yüksekliği
+  var targetOffset = 950; // Kaydırılacak hedef noktanın yüksekliği
 
   window.scrollTo({
     top: targetOffset,

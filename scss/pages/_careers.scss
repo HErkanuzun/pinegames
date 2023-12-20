@@ -1,6 +1,7 @@
 .positions
 {
-    padding-bottom: 5em;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
         &__title
         {
             display: flex;
@@ -20,13 +21,12 @@
             &__card
             {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 text-align: center;
                 align-items: center;
-                background-color: $background-color-2;
                 border-radius: 30px;
-                width: 80vw;
-                box-shadow: 2px 3px 4px 4px rgb(233, 231, 231);
+                width: 60vw;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 margin: 1em;
                 &:hover
                 {

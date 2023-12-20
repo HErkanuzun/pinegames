@@ -7,9 +7,8 @@
 {
     display: flex;
     padding: 1em;
+    padding-top: 200px;
     background-color: #ededed;
-    padding:10vh;
-
         .sidebar
         {
             width: 20%;
@@ -136,7 +135,7 @@
     .privacy
     {
         display: flex;
-        padding: 1em;
+        padding-top: 15vh !important;
         background-color: #ededed;
         padding:50px;
         flex-direction: column;
@@ -215,9 +214,12 @@
                 }
                 &__main
                 {
+                    justify-content: center;
+                    align-items: center;
                     &--subtitle
                     {
                         h6{
+                            justify-content: center;
                             margin: 2em 0;
                             font-weight: 600;
                         }
@@ -225,13 +227,16 @@
                     &--p
                     {
                         p{
+                            justify-content: center;
                             font-weight: 400;
                         }
                         h6{
+                            justify-content: center;
                             margin: 2em 0;
                             font-weight: 700; 
                         }
                         ul{
+                            justify-content: center;
                             li{
                                 font-weight: 400;
                             }
