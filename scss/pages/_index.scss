@@ -64,7 +64,7 @@
                 border-radius: 50px;
                 transition: 0.3s ease-in-out;
                 color: $primary-color;
-                background-color: #fff;
+                background-color: $button-background-color-2;
             }
         color:#ffffff;
         border-radius: 50px;
@@ -140,17 +140,21 @@
         text-align: start;
       }
     }
-    &__info {
+    &__info 
+    {
       padding: 0;
       height: 60vh;
       &--text {
         background-color: #ffffff;
         padding-top: 100px;
       }
-
     }
-    &__careers{
+    &__careers
+    {
       padding: 0;
+      p{
+        width: 90vh;
+      }
     }
   }
 }
