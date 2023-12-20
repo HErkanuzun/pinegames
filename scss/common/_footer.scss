@@ -33,7 +33,7 @@
 
     &__routs{
 
-      padding-left: 10vh;
+      padding-left: 180px;
       color: #fff;
       display: flex;
       align-items: center;
@@ -43,7 +43,7 @@
       &__links{
         display: flex;
         list-style-type: none;
-        gap:14px;
+        gap:10px;
         li{
           a{
 
@@ -194,7 +194,8 @@ Bigger2Smaller
     }
 
     &__routs{
-      flex-direction: column;
+      margin-left: 149px;
+      padding-left: 0;
       &__ref{
         margin-right: 0;
       }
@@ -226,7 +227,6 @@ Bigger2Smaller
     height: auto;
     &__logo{
       margin-top:10px;
-      
       align-items: center;
       justify-content: center;
     }

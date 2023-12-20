@@ -238,7 +238,7 @@ body {
   font-weight: medium;
 }
 .footer__routs {
-  padding-left: 10vh;
+  padding-left: 180px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -249,7 +249,7 @@ body {
 .footer__routs__links {
   display: flex;
   list-style-type: none;
-  gap: 14px;
+  gap: 10px;
 }
 .footer__routs__links li a {
   color: #fffeee;
@@ -362,7 +362,8 @@ Bigger2Smaller
     height: 100%;
   }
   .footer__routs {
-    flex-direction: column;
+    margin-left: 149px;
+    padding-left: 0;
   }
   .footer__routs__ref {
     margin-right: 0;
