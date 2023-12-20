@@ -125,7 +125,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: -100%;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
   .mobile-menu {
     margin-right: 0;
@@ -795,7 +795,7 @@ Bigger2Smaller
 
 @media screen and (max-width: 900px) {
   .main_hero h1 {
-    width: 560px;
+    width: 550px;
     text-indent: 0;
     padding-left: 20px;
     word-wrap: nowrap;
@@ -804,16 +804,24 @@ Bigger2Smaller
   .main__info {
     padding: 0;
     height: 60vh;
+    padding-top: 50px;
   }
   .main__info--text {
     background-color: #ffffff;
     padding-top: 100px;
   }
-  .main__careers {
-    padding: 0;
+  .main__info--text p {
+    width: 25rem;
   }
-  .main__careers p {
-    width: 90vh;
+  .main__careers--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0p;
+  }
+  .main__careers--text p {
+    width: 25rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -823,7 +831,7 @@ Bigger2Smaller
 }
 @media screen and (max-width: 600px) {
   .main_hero h1 {
-    width: 560px;
+    width: 450px;
     font-size: 200px;
     text-indent: 0;
     padding-left: 2px;
@@ -833,22 +841,45 @@ Bigger2Smaller
 }
 @media screen and (max-width: 450px) {
   .main_hero h1 {
-    width: 560px;
+    width: 375px;
     font-size: 175px;
     text-indent: 0;
     padding-left: 2px;
     word-wrap: nowrap;
     text-align: start;
   }
+  .main__info {
+    width: auto;
+    padding-top: 10px !important;
+  }
+  .main__info p {
+    width: auto;
+  }
+  .main__careers--text p {
+    width: auto !important;
+  }
 }
 @media screen and (max-width: 375px) {
   .main_hero h1 {
-    width: 350px;
-    font-size: 150px;
+    width: 100%;
+    font-size: 140px;
     text-indent: 0;
     padding-left: 2px;
     word-wrap: nowrap;
     text-align: start;
+  }
+  .main__info--text p {
+    padding: 0;
+  }
+  .main__careers--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0p;
+  }
+  .main__careers--text p {
+    width: 25rem;
   }
 }
 .positions {

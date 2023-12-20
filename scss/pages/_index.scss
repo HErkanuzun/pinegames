@@ -132,8 +132,9 @@
   {
     &_hero
     {
+      
       h1{
-        width: 560px;
+        width: 550px;
         text-indent: 0;
         padding-left: 20px;
         word-wrap: nowrap;
@@ -144,16 +145,25 @@
     {
       padding: 0;
       height: 60vh;
+      padding-top: 50px;
       &--text {
         background-color: #ffffff;
         padding-top: 100px;
+        p
+        {
+          width: 25rem;
+        }
       }
     }
-    &__careers
+    &__careers--text
     {
-      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0px;
+      padding-bottom: 0p;
       p{
-        width: 90vh;
+        width: 25rem;
       }
     }
   }
@@ -171,7 +181,7 @@
   &_hero
   {
     h1{
-      width: 560px;
+      width: 450px;
       font-size: 200px;
       text-indent: 0;
       padding-left: 2px;
@@ -189,12 +199,27 @@
     &_hero
     {
       h1{
-        width: 560px;
+        width: 375px;
         font-size: 175px;
         text-indent: 0;
         padding-left: 2px;
         word-wrap: nowrap;
         text-align: start;
+      }
+    }
+    &__info
+    {
+      width: auto;
+            padding-top: 10px !important;
+      p
+      {
+        width: auto;
+      }
+    }
+    &__careers--text{
+      p
+      {
+        width: auto !important;
       }
     }
   
@@ -206,14 +231,34 @@
       &_hero
       {
         h1{
-          width: 350px;
-          font-size: 150px;
+          width: 100%;
+          font-size: 140px;
           text-indent: 0;
           padding-left: 2px;
           word-wrap: nowrap;
           text-align: start;
         }
       }
+      &__info 
+      {
+        &--text {
+          p
+          {
+            padding: 0;
+          }
+        }
+      }
+      &__careers--text
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 0p;
+        p{
+          width: 25rem;
+        }
+      }
     
     }
-    }
+}
