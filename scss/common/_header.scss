@@ -1,7 +1,10 @@
 body{
   position: relative;
 }
-
+.rotate
+{
+  transform: rotate(360deg);
+}
 .navbar
 {
   z-index: 3;

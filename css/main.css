@@ -22,6 +22,10 @@ body {
   position: relative;
 }
 
+.rotate {
+  transform: rotate(360deg);
+}
+
 .navbar {
   z-index: 3;
   padding-left: 48px;
@@ -434,7 +438,7 @@ Bigger2Smaller
 }
 .games__platforms {
   display: flex;
-  background-color: #ffffee;
+  background-color: #ffffff;
   text-align: center;
   justify-content: space-evenly;
   padding: 5em 5em;
@@ -531,7 +535,7 @@ Bigger2Smaller
   }
   .games__platforms {
     display: flex;
-    background-color: #ffffee;
+    background-color: #ffffff;
     text-align: center;
     justify-content: space-evenly;
     padding: 5em 5em;
@@ -628,7 +632,7 @@ Bigger2Smaller
   }
   .games__platforms {
     flex-direction: column;
-    background-color: #ffffee;
+    background-color: #ffffff;
     text-align: center;
     justify-content: center;
     padding: 10px 10px;
@@ -753,7 +757,7 @@ Bigger2Smaller
 .main__info--button a:hover {
   border-radius: 50px;
   transition: 0.3s ease-in-out;
-  color: #05C15D;
+  color: #ffffff;
   background-color: #0A4436;
 }
 .main__careers--text {
@@ -986,7 +990,7 @@ Bigger2Smaller
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    background-color: #ffffee;
+    background-color: #ffffff;
     border-radius: 30px;
     width: 70vw;
     box-shadow: 2px 3px 4px 4px rgb(233, 231, 231);
@@ -1062,7 +1066,7 @@ Bigger2Smaller
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    background-color: #ffffee;
+    background-color: #ffffff;
     border-radius: 30px;
     width: 100%;
     box-shadow: 2px 3px 4px 4px rgb(233, 231, 231);
@@ -1139,7 +1143,7 @@ Bigger2Smaller
     text-align: center;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffee;
+    background-color: #ffffff;
     border-radius: 12px;
     width: 100%;
     box-shadow: 2px 3px 4px 4px rgb(233, 231, 231);
