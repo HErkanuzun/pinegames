@@ -64,7 +64,7 @@ window.addEventListener('scroll', function() {
 
   if (window.scrollY > 880) { // 400 piksel aşağı kaydırıldığında
     navbar.style.backgroundColor = '#05C15D'; // Navbar arka plan rengini değiştir
-    logo.src = '/img/Logo_White_01.png'; // Logo görüntüsünü değiştir
+    logo.src = 'img/Logo_White_01.png'; // Logo görüntüsünü değiştir
 
     // Bağlantıların renglerini değiştir ve animasyon sınıfını ekle
     links.forEach(function(link) {
@@ -74,7 +74,7 @@ window.addEventListener('scroll', function() {
     });
   } else {
     navbar.style.backgroundColor = '#05C15D'; // Başlangıç rengi
-    logo.src = '/img/Logo_White_01.png'; // Logo görüntüsünü geri al
+    logo.src = 'img/Logo_White_01.png'; // Logo görüntüsünü geri al
 
     // Bağlantıların renglerini geri al ve animasyon sınıfını kaldır
     links.forEach(function(link) {

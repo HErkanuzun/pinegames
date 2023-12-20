@@ -1197,6 +1197,7 @@ Bigger2Smaller
 
 .privacy {
   display: flex;
+  padding-top: 150px;
   padding: 1em;
   background-color: #ededed;
 }
