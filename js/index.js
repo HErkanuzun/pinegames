@@ -87,7 +87,15 @@ window.addEventListener('scroll', function() {
 
 
 document.getElementById('link1').addEventListener('click', function() {
-  var targetOffset = 950; // Kaydırılacak hedef noktanın yüksekliği
+  var targetOffset =700; // Kaydırılacak hedef noktanın yüksekliği
+
+  window.scrollTo({
+    top: targetOffset,
+    behavior: 'smooth' // Yumuşak geçiş efekti
+  });
+});
+document.getElementById('link2').addEventListener('click', function() {
+  var targetOffset =600; // Kaydırılacak hedef noktanın yüksekliği
 
   window.scrollTo({
     top: targetOffset,
