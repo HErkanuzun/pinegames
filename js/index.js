@@ -34,9 +34,26 @@ footerLinksBtn?.addEventListener("click",function(){
 
 
 
-menuHamburger.addEventListener('click',()=>{
-navLinks.classList.toggle('mobile-menu')
+
+const menuHamburgerbutton = document.getElementById('hamburgerbutton'); // Replace 'yourHamburgerButtonId' with your actual button ID
+const navLinks2 = document.getElementById('navlinks'); // Replace 'yourNavLinksId' with your actual nav links container ID
+const body = document.body;
+
+let scrollEnabled = true;
+
+menuHamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('mobile-menu');
+  
+  if (scrollEnabled) {
+    body.style.overflow = 'hidden'; // Disable scrolling
+    window.scrollTo(0, 0); // Scroll to the top
+  } else {
+    body.style.overflow = 'auto'; // Enable scrolling
+  }
+
+  scrollEnabled = !scrollEnabled; // Toggle scrollEnabled value
 });
+
 
 
 

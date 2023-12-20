@@ -6,7 +6,9 @@
   box-sizing: border-box;
   text-decoration: none !important;
 }
-
+body{
+  overflow: active;
+}
 
 .transition{
   transition: 0.5s ease-in-out;
