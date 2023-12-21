@@ -1,0 +1,14 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Set the default page to index.html
+DirectoryIndex index.html
+
+# Handle requests for HTML files
+<FilesMatch "\.html$">
+    # Add any additional MIME types you want to support
+    AddType text/html .html
+</FilesMatch>
+
+# Custom 404 error page
+ErrorDocument 404 /Pages/404.html
