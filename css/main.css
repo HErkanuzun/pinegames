@@ -1256,7 +1256,7 @@ Bigger2Smaller
   text-align: center;
 }
 .privacy .content__content__title h2 {
-  font-weight: 700;
+  font-weight: bold;
 }
 .privacy .content__content--title {
   margin-bottom: 3em;
