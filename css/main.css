@@ -1399,7 +1399,7 @@ Bigger2Smaller
 
 .terms {
   display: flex;
-  padding: 200px;
+  padding-top: 200px;
   background-color: #ededed;
 }
 .terms .sidebar {
