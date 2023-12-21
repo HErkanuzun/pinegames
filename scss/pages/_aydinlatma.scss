@@ -3,7 +3,7 @@
     word-wrap: break-word;
     white-space: wrap;
 }
-.privacy
+.employees
 {
     display: flex;
     padding: 200px;
@@ -17,11 +17,12 @@
                 {
                     display: flex;
                     flex-direction: column;
-                    a:nth-child(2){
+                    a:nth-child(3){
                         color: #ffffff;
                         background-color: $primary-color;
                     }
                     a{
+
                         color: $button-background-color;
                         border-radius: 12px;
                         background-color: #ffffff;
@@ -42,26 +43,24 @@
                 }
 
         }
-        .download{
-            
-            a{
-                &:hover
-                {
-                    border-radius: 12px;
-                    transition: 0.3s ease-in-out;
-                    color: $button-text-color;
-                    background-color: $button-background-color-2;
-                }
-                color: $button-background-color;
-                border-radius: 12px;
-                background-color: #ffffff;
-                text-align: center;
-                text-decoration: none;
-                padding: 12px 16px;
-                width: 80%;
-                margin-top:12px;
-            }
-        }
+        .download a {
+            color: $button-background-color; /* İlk durum için renk */
+            border-radius: 12px;
+            background-color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 16px;
+            width: 80%;
+            margin-top: 12px;
+            transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out; /* İlk durumun geçişi */
+          }
+          
+          .download a:hover {
+            border-radius: 12px;
+            color: $button-text-color; /* Hover durumunda renk değişimi */
+            background-color: $button-background-color-2; /* Hover durumunda arka plan rengi değişimi */
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+          }
         .content
         {
             width: 75%;
@@ -129,7 +128,7 @@
 }
 
 @media screen and (max-width:1550px) {
-    .privacy
+    .employees
     {
         display: flex;
         padding: 1em;
@@ -144,13 +143,32 @@
             .content
             {
                 width: 70%;
-            }   
+            }
+               
 
     }
+    .download a {
+        color: $button-background-color; /* İlk durum için renk */
+        border-radius: 12px;
+        background-color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 16px;
+        width: 80%;
+        margin-top: 12px;
+        transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out; /* İlk durumun geçişi */
+      }
+      
+      .download a:hover {
+        border-radius: 12px;
+        color: $button-text-color; /* Hover durumunda renk değişimi */
+        background-color: $button-background-color-2; /* Hover durumunda arka plan rengi değişimi */
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+      }
 }
 
 @media screen and (max-width:991px) {
-    .privacy
+    .employees
     {
         display: flex;
         padding-top: 15vh !important;
@@ -171,11 +189,11 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 100%;
+                    width: 325px;
                     background-color: #ededed;
+                    padding-left: 20px;
                     display: flex;
                     flex-direction: column;
-                    
                     a:last-child img{   
                             scale: 2;
                     }
@@ -186,7 +204,7 @@
                         text-align: center;
                         text-decoration: none;
                         padding: 12px 16px;
-                        width: 80%;
+                        width: 100%;
                         margin-top:12px;
                         img{
                             width: 15px;
@@ -196,6 +214,19 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                    }
+                    &--download a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 305px;
+                    }
+                
+                    &--download a:hover {
+                        border-radius: 12px;
+                        color: $button-text-color; /* Hover durumunda renk değişimi */
+                        background-color: $button-background-color-2; /* Hover durumunda arka plan rengi değişimi */
+                        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
                     }
                 }
 
@@ -265,5 +296,28 @@
         }  
          
 
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .employees{
+        .sidebar{
+            btns{
+                &--download a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 300px;
+                }
+            
+                &--download a:hover {
+                    border-radius: 12px;
+                    color: $button-text-color; /* Hover durumunda renk değişimi */
+                    background-color: $button-background-color-2; /* Hover durumunda arka plan rengi değişimi */
+                    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+                }
+            }
+        }
     }
 }

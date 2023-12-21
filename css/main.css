@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap");
 * {
@@ -745,7 +746,6 @@ Bigger2Smaller
   justify-content: center;
   align-items: center;
   margin: 15px 10px;
-  font-weight: 900;
 }
 .main__info--button a {
   color: #ffffff;
@@ -753,6 +753,7 @@ Bigger2Smaller
   background-color: #05C15D;
   text-align: center;
   text-decoration: none;
+  font-weight: 600;
   padding: 10px 50px;
 }
 .main__info--button a:hover {
@@ -1209,12 +1210,9 @@ Bigger2Smaller
   display: flex;
   flex-direction: column;
 }
-.privacy .sidebar_btns a:last-child {
+.privacy .sidebar_btns a:nth-child(2) {
   color: #ffffff;
   background-color: #05C15D;
-}
-.privacy .sidebar_btns a:last-child img {
-  scale: 2;
 }
 .privacy .sidebar_btns a {
   color: #0A4436;
@@ -1232,6 +1230,22 @@ Bigger2Smaller
 }
 .privacy .sidebar_btns a img {
   width: 15px;
+}
+.privacy .download a {
+  color: #0A4436;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 16px;
+  width: 80%;
+  margin-top: 12px;
+}
+.privacy .download a:hover {
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+  color: #ffffff;
+  background-color: #0A4436;
 }
 .privacy .content {
   width: 75%;
@@ -1396,12 +1410,9 @@ Bigger2Smaller
   display: flex;
   flex-direction: column;
 }
-.terms .sidebar_btns a:first-child {
+.terms .sidebar_btns a:nth-child(1) {
   color: #ffffff;
   background-color: #05C15D;
-}
-.terms .sidebar_btns a:first-child img {
-  scale: 2;
 }
 .terms .sidebar_btns a {
   color: #0A4436;
@@ -1419,6 +1430,22 @@ Bigger2Smaller
 }
 .terms .sidebar_btns a img {
   width: 15px;
+}
+.terms .download a {
+  color: #0A4436;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 16px;
+  width: 80%;
+  margin-top: 12px;
+}
+.terms .download a:hover {
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+  color: #ffffff;
+  background-color: #0A4436;
 }
 .terms .content {
   width: 75%;
@@ -1499,7 +1526,7 @@ Bigger2Smaller
     display: flex;
     flex-direction: column;
   }
-  .terms .sidebar_btns a:first-child img {
+  .terms .sidebar_btns a:last-child img {
     scale: 2;
   }
   .terms .sidebar_btns a {
@@ -1699,6 +1726,252 @@ Bigger2Smaller
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
+}
+
+* {
+  text-wrap: wrap;
+  word-wrap: break-word;
+  white-space: wrap;
+}
+
+.employees {
+  display: flex;
+  padding: 200px;
+  background-color: #ededed;
+}
+.employees .sidebar {
+  width: 20%;
+  height: auto;
+}
+.employees .sidebar_btns {
+  display: flex;
+  flex-direction: column;
+}
+.employees .sidebar_btns a:nth-child(3) {
+  color: #ffffff;
+  background-color: #05C15D;
+}
+.employees .sidebar_btns a {
+  color: #0A4436;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 16px;
+  width: 80%;
+  margin-top: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.employees .sidebar_btns a img {
+  width: 15px;
+}
+.employees .download a {
+  color: #0A4436; /* İlk durum için renk */
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 16px;
+  width: 80%;
+  margin-top: 12px;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out; /* İlk durumun geçişi */
+}
+.employees .download a:hover {
+  border-radius: 12px;
+  color: #ffffff; /* Hover durumunda renk değişimi */
+  background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+}
+.employees .content {
+  width: 75%;
+}
+.employees .content__content__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.employees .content__content__title h2 {
+  font-weight: 700;
+}
+.employees .content__content--title {
+  margin-bottom: 3em;
+}
+.employees .content__content--title h5 {
+  font-weight: 700;
+}
+.employees .content__content--date h6 {
+  font-weight: 700;
+}
+.employees .content__content__main--subtitle h6 {
+  margin: 2em 0;
+  font-weight: 600;
+}
+.employees .content__content__main--p p {
+  font-weight: 400;
+}
+.employees .content__content__main--p h6 {
+  margin: 2em 0;
+  font-weight: 700;
+}
+.employees .content__content__main--p ul li {
+  font-weight: 400;
+}
+
+.dropdown img {
+  width: 40px;
+  aspect-ratio: 1.4/1;
+}
+
+@media screen and (max-width: 1550px) {
+  .employees {
+    display: flex;
+    padding: 1em;
+    background-color: #ededed;
+    padding-top: 140px;
+  }
+  .employees .sidebar {
+    width: 30%;
+  }
+  .employees .content {
+    width: 70%;
+  }
+  .download a {
+    color: #0A4436; /* İlk durum için renk */
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 80%;
+    margin-top: 12px;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out; /* İlk durumun geçişi */
+  }
+  .download a:hover {
+    border-radius: 12px;
+    color: #ffffff; /* Hover durumunda renk değişimi */
+    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+  }
+}
+@media screen and (max-width: 991px) {
+  .employees {
+    display: flex;
+    padding-top: 15vh !important;
+    background-color: #ededed;
+    padding: 50px;
+    flex-direction: column;
+  }
+  .employees .sidebar {
+    margin-bottom: 50px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .employees .sidebar_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 325px;
+    background-color: #ededed;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .employees .sidebar_btns a:last-child img {
+    scale: 2;
+  }
+  .employees .sidebar_btns a {
+    color: black;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .employees .sidebar_btns a img {
+    width: 15px;
+  }
+  .employees .sidebar_btns--download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+  }
+  .employees .sidebar_btns--download a:hover {
+    border-radius: 12px;
+    color: #ffffff; /* Hover durumunda renk değişimi */
+    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+  }
+  .employees .content {
+    width: 95%;
+  }
+  .employees .content__content__title {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .employees .content__content__title h2 {
+    font-weight: 700;
+  }
+  .employees .content__content--title {
+    margin-bottom: 3em;
+  }
+  .employees .content__content--title h5 {
+    font-weight: 700;
+  }
+  .employees .content__content--date h6 {
+    font-weight: 700;
+  }
+  .employees .content__content__main {
+    justify-content: center;
+    align-items: center;
+  }
+  .employees .content__content__main--subtitle h6 {
+    justify-content: center;
+    margin: 2em 0;
+    font-weight: 600;
+  }
+  .employees .content__content__main--p p {
+    justify-content: center;
+    font-weight: 400;
+  }
+  .employees .content__content__main--p h6 {
+    justify-content: center;
+    margin: 2em 0;
+    font-weight: 700;
+  }
+  .employees .content__content__main--p ul {
+    justify-content: center;
+  }
+  .employees .content__content__main--p ul li {
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 991px) {
+  .employees .sidebar btns--download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+  .employees .sidebar btns--download a:hover {
+    border-radius: 12px;
+    color: #ffffff; /* Hover durumunda renk değişimi */
+    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
