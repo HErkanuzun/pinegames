@@ -4,17 +4,40 @@ const footerLinkList = document.getElementById("footerLinkList");
 const menuHamburger = document.querySelector(".menu-hamburger");
 const navLinks = document.querySelector(".nav-links");
 
-footerLinksBtn?.addEventListener("click",function(){
-
-  if(footerLinkList.style.opacity==="0"){
-    footerLinkList.style.opacity = "1";
-    footerLinkList.style.scale = "1";
-  }else{
-    footerLinkList.style.opacity = "0";
-    footerLinkList.style.scale = "0";
-  }
- 
+app.get('*', function(req, res) {
+  res.redirect('/pages/404.html');
 });
+const izinliDosyalar = [
+  '/index.html',
+  '/pages/apply.html',
+  '/pages/calisan-kabul.html',
+  '/pages/Careers.html',
+  '/pages/Privacy.html',
+  '/pages/terms.html',
+  '/pages/404.html',
+  // Yönlendirmek istediğiniz diğer izinli dosyaları ekleyin
+];
+
+const yonlendir404 = () => {
+  const currentPath = window.location.pathname;
+
+  // Mevcut yolun izinli dosyalar içinde olup olmadığını kontrol eder
+  const izinliErisim = izinliDosyalar.includes(currentPath);
+
+  // Eğer izin verilen dosyalardan biri değilse 404 sayfasına yönlendirilir
+  if (!izinliErisim) {
+    window.location.href = '/pages/404.html';
+  }
+};
+
+document.addEventListener('DOMContentLoaded', yonlendir404);
+
+document.addEventListener('DOMContentLoaded', yonlendir404);
+
+document.addEventListener('DOMContentLoaded', yonlendir404);
+
+
+document.addEventListener('DOMContentLoaded', yonlendir404);
 
 /* if(typeof Swiper !== 'undefined'){
   var mySwiper = new Swiper ('.swiper-container', {
@@ -31,6 +54,9 @@ footerLinksBtn?.addEventListener("click",function(){
   });
   
 } */
+
+
+
 
 
 

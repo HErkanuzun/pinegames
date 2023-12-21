@@ -1198,8 +1198,7 @@ Bigger2Smaller
 
 .privacy {
   display: flex;
-  padding-top: 150px;
-  padding: 1em;
+  padding: 200px;
   background-color: #ededed;
 }
 .privacy .sidebar {
@@ -1207,15 +1206,18 @@ Bigger2Smaller
   height: auto;
 }
 .privacy .sidebar_btns {
-  background-color: #ededed;
   display: flex;
   flex-direction: column;
+}
+.privacy .sidebar_btns a:last-child {
+  color: #ffffff;
+  background-color: #05C15D;
 }
 .privacy .sidebar_btns a:last-child img {
   scale: 2;
 }
 .privacy .sidebar_btns a {
-  color: black;
+  color: #0A4436;
   border-radius: 12px;
   background-color: #ffffff;
   text-align: center;
@@ -1276,7 +1278,7 @@ Bigger2Smaller
     display: flex;
     padding: 1em;
     background-color: #ededed;
-    padding: 350px;
+    padding-top: 140px;
   }
   .privacy .sidebar {
     width: 30%;
@@ -1295,7 +1297,7 @@ Bigger2Smaller
   }
   .privacy .sidebar {
     margin-bottom: 50px;
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
     align-items: center;
@@ -1331,7 +1333,7 @@ Bigger2Smaller
     width: 15px;
   }
   .privacy .content {
-    width: 75%;
+    width: 95%;
   }
   .privacy .content__content__title {
     display: flex;
@@ -1383,24 +1385,26 @@ Bigger2Smaller
 
 .terms {
   display: flex;
-  padding: 1em;
-  background-color: #ededed;
   padding: 200px;
+  background-color: #ededed;
 }
 .terms .sidebar {
   width: 20%;
   height: auto;
 }
 .terms .sidebar_btns {
-  background-color: #ededed;
   display: flex;
   flex-direction: column;
+}
+.terms .sidebar_btns a:first-child {
+  color: #ffffff;
+  background-color: #05C15D;
 }
 .terms .sidebar_btns a:first-child img {
   scale: 2;
 }
 .terms .sidebar_btns a {
-  color: black;
+  color: #0A4436;
   border-radius: 12px;
   background-color: #ffffff;
   text-align: center;
@@ -1457,36 +1461,36 @@ Bigger2Smaller
 }
 
 @media screen and (max-width: 1550px) {
-  .privacy {
+  .terms {
     display: flex;
     padding: 1em;
     background-color: #ededed;
-    padding: 50px;
+    padding-top: 140px;
   }
-  .privacy .sidebar {
+  .terms .sidebar {
     width: 30%;
   }
-  .privacy .content {
+  .terms .content {
     width: 70%;
   }
 }
 @media screen and (max-width: 991px) {
-  .privacy {
+  .terms {
     display: flex;
-    padding: 1em;
+    padding-top: 15vh !important;
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
   }
-  .privacy .sidebar {
+  .terms .sidebar {
     margin-bottom: 50px;
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .privacy .sidebar_btns {
+  .terms .sidebar_btns {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1495,10 +1499,10 @@ Bigger2Smaller
     display: flex;
     flex-direction: column;
   }
-  .privacy .sidebar_btns a:last-child img {
+  .terms .sidebar_btns a:first-child img {
     scale: 2;
   }
-  .privacy .sidebar_btns a {
+  .terms .sidebar_btns a {
     color: black;
     border-radius: 12px;
     background-color: #ffffff;
@@ -1512,41 +1516,51 @@ Bigger2Smaller
     align-items: center;
     justify-content: space-between;
   }
-  .privacy .sidebar_btns a img {
+  .terms .sidebar_btns a img {
     width: 15px;
   }
-  .privacy .content {
-    width: 75%;
+  .terms .content {
+    width: 95%;
   }
-  .privacy .content__content__title {
+  .terms .content__content__title {
     display: flex;
     justify-content: flex-start;
     text-align: start;
   }
-  .privacy .content__content__title h2 {
+  .terms .content__content__title h2 {
     font-weight: 700;
   }
-  .privacy .content__content--title {
+  .terms .content__content--title {
     margin-bottom: 3em;
   }
-  .privacy .content__content--title h5 {
+  .terms .content__content--title h5 {
     font-weight: 700;
   }
-  .privacy .content__content--date h6 {
+  .terms .content__content--date h6 {
     font-weight: 700;
   }
-  .privacy .content__content__main--subtitle h6 {
+  .terms .content__content__main {
+    justify-content: center;
+    align-items: center;
+  }
+  .terms .content__content__main--subtitle h6 {
+    justify-content: center;
     margin: 2em 0;
     font-weight: 600;
   }
-  .privacy .content__content__main--p p {
+  .terms .content__content__main--p p {
+    justify-content: center;
     font-weight: 400;
   }
-  .privacy .content__content__main--p h6 {
+  .terms .content__content__main--p h6 {
+    justify-content: center;
     margin: 2em 0;
     font-weight: 700;
   }
-  .privacy .content__content__main--p ul li {
+  .terms .content__content__main--p ul {
+    justify-content: center;
+  }
+  .terms .content__content__main--p ul li {
     font-weight: 400;
   }
 }

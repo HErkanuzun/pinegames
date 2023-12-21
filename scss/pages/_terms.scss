@@ -6,10 +6,8 @@
 .terms
 {
     display: flex;
-    padding: 1em;
+    padding: 200px;
     background-color: #ededed;
-    padding:200px;
-
         .sidebar
         {
             width: 20%;
@@ -17,15 +15,17 @@
         
             &_btns
                 {
-                    background-color: #ededed;
                     display: flex;
                     flex-direction: column;
-                    
+                    a:first-child {
+                        color: #ffffff;
+                        background-color: $primary-color;
+                    }
                     a:first-child img{   
                             scale: 2;
                     }
                     a{
-                        color: black;
+                        color: $button-background-color;
                         border-radius: 12px;
                         background-color: #ffffff;
                         text-align: center;
@@ -48,7 +48,7 @@
         .content
         {
             width: 75%;
-
+            
             &__content
             {
                 &__title
@@ -112,12 +112,12 @@
 }
 
 @media screen and (max-width:1550px) {
-    .privacy
+    .terms
     {
         display: flex;
         padding: 1em;
         background-color: #ededed;
-        padding:50px;
+        padding-top: 140px;
 
             .sidebar
             {
@@ -133,17 +133,17 @@
 }
 
 @media screen and (max-width:991px) {
-    .privacy
+    .terms
     {
         display: flex;
-        padding: 1em;
+        padding-top: 15vh !important;
         background-color: #ededed;
         padding:50px;
         flex-direction: column;
         .sidebar
         {
             margin-bottom: 50px;
-            width: 100%;
+            width: 90%;
             height: auto;
             display: flex;
             align-items: center;
@@ -159,7 +159,7 @@
                     display: flex;
                     flex-direction: column;
                     
-                    a:last-child img{   
+                    a:first-child img{   
                             scale: 2;
                     }
                     a{
@@ -185,7 +185,7 @@
         }
         .content
         {
-            width: 75%;
+            width: 95%;
 
             &__content
             {
@@ -215,9 +215,12 @@
                 }
                 &__main
                 {
+                    justify-content: center;
+                    align-items: center;
                     &--subtitle
                     {
                         h6{
+                            justify-content: center;
                             margin: 2em 0;
                             font-weight: 600;
                         }
@@ -225,13 +228,16 @@
                     &--p
                     {
                         p{
+                            justify-content: center;
                             font-weight: 400;
                         }
                         h6{
+                            justify-content: center;
                             margin: 2em 0;
                             font-weight: 700; 
                         }
                         ul{
+                            justify-content: center;
                             li{
                                 font-weight: 400;
                             }
