@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
         integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>pinegames</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <title>PineGames  | Çalışan Aydınlatma Formu</title>
     <link rel="stylesheet" href="./../css/main.css" />
 
 </head>
@@ -24,12 +26,12 @@
         <div id="navlinks" class="nav-links">
             <ul id="liste">
                 <li><a id="link1" href="#about">ABOUT US</a></li>
-                <li><a id="link2" href="https://www.linkedin.com/company/pinegames/jobs/">CAREERS</a></li>
+                <li><a id="link2" target="_blank" href="https://www.linkedin.com/company/pinegames/jobs/">CAREERS</a></li>
             </ul>
         </div>
         <i id="hamburgerbutton" class="fa-solid fa-bars fa-xl menu-hamburger" style="color: #ffffff !important;" alt=".menu hamburger"></i>
     </nav>
-    <section id="employees">
+    <section id="employees" data-aos="fade-down">
         <div class="employees">
             <div class="sidebar">
                 <div class="sidebar_btns">
@@ -40,14 +42,13 @@
                     <a href="/Pages/privacy.html">
                         <span>Privacy Policy</span>
                     </a>
-                    <a href="/Pages/calisan-kabul.html">
+                    <a class="sidebar_active-item" href="/Pages/calisan-kabul.html">
                         <span>Calisan Aydinlatma Formu</span>
                     </a>
-                    <div class="sidebar_btns--download">
-                        <a href="/docs/Pine Games İlgili Kişi Başvuru Formu - 20231129.docx" download>
-                            Download Form
+                        <a class="sidebar_active-item" href="/docs/Pine Games İlgili Kişi Başvuru Formu - 20231129.docx" download>
+                            Download Form <i class="fas fa-download"></i>
                         </a>
-                    </div>
+               
                 </div>
             </div>
             <div class="content">
@@ -201,16 +202,16 @@
         </div>
         <ul class="footer__socials">
             <li>
-                <a href="#">
+                <a target="_blank" href="#">
                     <img src="/img/Facebook.png" alt="">
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                     <img src="/img/Instagram.png" alt="">
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                     <img src="/img/Linkedin.png" alt="">
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                     <img src="/img/Twitter.png" alt="">
                 </a>
 
@@ -219,6 +220,8 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="/js/index.js"></script>
 </body>
 </html>
