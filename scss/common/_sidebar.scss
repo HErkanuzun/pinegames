@@ -1,0 +1,104 @@
+
+.sidebar_active-item{
+    color: #ffffff !important;
+    background-color: $primary-color !important;
+}
+
+
+.sidebar
+{
+    width: 20%;
+    height: auto;
+
+    &_btns
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                color: $button-background-color;
+                border-radius: 12px;
+                background-color: #ffffff;
+                text-align: center;
+                text-decoration: none;
+                padding: 12px 16px;
+                width: 80%;
+                margin-top:12px;
+                img{
+                    width: 15px;
+                }
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+}
+
+@media screen and (max-width:1550px) {
+    .sidebar
+    {
+        width: 30%;
+    
+    }
+}
+@media screen and (max-width:991px) {
+    .sidebar
+    {
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &_btns
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                background-color: #ededed;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                a:last-child img{   
+                        scale: 2;
+                }
+                a{
+                    color: black;
+                    border-radius: 12px;
+                    background-color: #ffffff;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 12px 16px;
+                    width: 100%;
+                    margin-top:12px;
+                    img{
+                        width: 15px;
+                    }
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                &--download a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 305px;
+                }
+            
+                &--download a:hover {
+                    border-radius: 12px;
+                    color: $button-text-color; /* Hover durumunda renk değişimi */
+                    background-color: $button-background-color-2; /* Hover durumunda arka plan rengi değişimi */
+                    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+                }
+            }
+
+    }
+}

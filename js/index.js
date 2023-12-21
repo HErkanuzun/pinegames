@@ -1,3 +1,4 @@
+AOS.init();
 const footerLinksBtn = document.getElementById("footerLinksBtn");
 const footerLinkList = document.getElementById("footerLinkList");
 
@@ -38,28 +39,11 @@ footerLinksBtn?.addEventListener("click",function(){
 
 
 
-const menuHamburgerbutton = document.getElementById('hamburgerbutton'); // Replace 'yourHamburgerButtonId' with your actual button ID
-const navLinks2 = document.getElementById('navlinks'); // Replace 'yourNavLinksId' with your actual nav links container ID
-const body = document.body;
-
-let scrollEnabled = true;
-
-menuHamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('mobile-menu');
-  
-  if (scrollEnabled) {
-    body.style.overflow = 'hidden'; // Disable scrolling
-    window.scrollTo(0, 0); // Scroll to the top
-  } else {
-    body.style.overflow = 'auto'; // Enable scrolling
-  }
-
-  scrollEnabled = !scrollEnabled; // Toggle scrollEnabled value
-});
 
 
 
 
+/*
 window.addEventListener('scroll', function() {
   var navbar = document.querySelector('.navbar');
   var logo = document.getElementById('logo');
@@ -88,7 +72,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
+*/
 document.getElementById('link1').addEventListener('click', function() {
   var targetOffset =700; // Kaydırılacak hedef noktanın yüksekliği
 

@@ -216,6 +216,7 @@
       }
     }
     &__careers--text{
+  
       p
       {
         width: 375px;
@@ -240,7 +241,10 @@
       }
       &__info 
       {
+        height: auto;
         &--text {
+          padding: 75px 50px;
+          width:100%;
           p
           {
             padding: 0;
@@ -253,7 +257,7 @@
         justify-content: center;
         align-items: center;
         padding-top: 0px;
-        padding-bottom: 0p;
+        padding-bottom: 0px;
         p{
           width: 300px;
         }
