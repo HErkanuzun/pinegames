@@ -1404,6 +1404,109 @@ Bigger2Smaller
     font-weight: 400;
   }
 }
+@media screen and (max-width: 400px) {
+  .privacy {
+    display: flex;
+    padding-top: 18vh !important;
+    background-color: #ededed;
+    padding: 50px;
+    flex-direction: column;
+  }
+  .privacy .sidebar {
+    margin-bottom: 50px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .privacy .sidebar_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 325px;
+    background-color: #ededed;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .privacy .sidebar_btns a:last-child img {
+    scale: 2;
+  }
+  .privacy .sidebar_btns a {
+    color: black;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .privacy .sidebar_btns a img {
+    width: 15px;
+  }
+  .privacy .sidebar_btns--download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+  }
+  .privacy .sidebar_btns--download a:hover {
+    border-radius: 12px;
+    color: #ffffff; /* Hover durumunda renk değişimi */
+    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+  }
+  .privacy .content {
+    width: 95%;
+  }
+  .privacy .content__content__title {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .privacy .content__content__title h2 {
+    font-weight: 700;
+  }
+  .privacy .content__content--title {
+    margin-bottom: 3em;
+  }
+  .privacy .content__content--title h5 {
+    font-weight: 700;
+  }
+  .privacy .content__content--date h6 {
+    font-weight: 700;
+  }
+  .privacy .content__content__main {
+    justify-content: center;
+    align-items: center;
+  }
+  .privacy .content__content__main--subtitle h6 {
+    justify-content: center;
+    margin: 2em 0;
+    font-weight: 600;
+  }
+  .privacy .content__content__main--p p {
+    justify-content: center;
+    font-weight: 400;
+  }
+  .privacy .content__content__main--p h6 {
+    justify-content: center;
+    margin: 2em 0;
+    font-weight: 700;
+  }
+  .privacy .content__content__main--p ul {
+    justify-content: center;
+  }
+  .privacy .content__content__main--p ul li {
+    font-weight: 400;
+  }
+}
 * {
   text-wrap: wrap;
   word-wrap: break-word;
@@ -1515,6 +1618,109 @@ Bigger2Smaller
   }
 }
 @media screen and (max-width: 991px) {
+  .terms {
+    display: flex;
+    padding-top: 18vh !important;
+    background-color: #ededed;
+    padding: 50px;
+    flex-direction: column;
+  }
+  .terms .sidebar {
+    margin-bottom: 50px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .terms .sidebar_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 325px;
+    background-color: #ededed;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .terms .sidebar_btns a:last-child img {
+    scale: 2;
+  }
+  .terms .sidebar_btns a {
+    color: black;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .terms .sidebar_btns a img {
+    width: 15px;
+  }
+  .terms .sidebar_btns--download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+  }
+  .terms .sidebar_btns--download a:hover {
+    border-radius: 12px;
+    color: #ffffff; /* Hover durumunda renk değişimi */
+    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+  }
+  .terms .content {
+    width: 95%;
+  }
+  .terms .content__content__title {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .terms .content__content__title h2 {
+    font-weight: 700;
+  }
+  .terms .content__content--title {
+    margin-bottom: 3em;
+  }
+  .terms .content__content--title h5 {
+    font-weight: 700;
+  }
+  .terms .content__content--date h6 {
+    font-weight: 700;
+  }
+  .terms .content__content__main {
+    justify-content: center;
+    align-items: center;
+  }
+  .terms .content__content__main--subtitle h6 {
+    justify-content: center;
+    margin: 2em 0;
+    font-weight: 600;
+  }
+  .terms .content__content__main--p p {
+    justify-content: center;
+    font-weight: 400;
+  }
+  .terms .content__content__main--p h6 {
+    justify-content: center;
+    margin: 2em 0;
+    font-weight: 700;
+  }
+  .terms .content__content__main--p ul {
+    justify-content: center;
+  }
+  .terms .content__content__main--p ul li {
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 400px) {
   .terms {
     display: flex;
     padding-top: 18vh !important;
@@ -1986,14 +2192,14 @@ Bigger2Smaller
   }
 }
 @media screen and (max-width: 991px) {
-  .employeesgir {
+  .employees {
     display: flex;
     padding-top: 18vh !important;
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
   }
-  .employeesgir .sidebar {
+  .employees .sidebar {
     margin-bottom: 50px;
     width: 90%;
     height: auto;
@@ -2001,7 +2207,7 @@ Bigger2Smaller
     align-items: center;
     justify-content: center;
   }
-  .employeesgir .sidebar_btns {
+  .employees .sidebar_btns {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2011,10 +2217,10 @@ Bigger2Smaller
     display: flex;
     flex-direction: column;
   }
-  .employeesgir .sidebar_btns a:last-child img {
+  .employees .sidebar_btns a:last-child img {
     scale: 2;
   }
-  .employeesgir .sidebar_btns a {
+  .employees .sidebar_btns a {
     color: black;
     border-radius: 12px;
     background-color: #ffffff;
@@ -2028,63 +2234,166 @@ Bigger2Smaller
     align-items: center;
     justify-content: space-between;
   }
-  .employeesgir .sidebar_btns a img {
+  .employees .sidebar_btns a img {
     width: 15px;
   }
-  .employeesgir .sidebar_btns--download a {
+  .employees .sidebar_btns--download a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 305px;
   }
-  .employeesgir .sidebar_btns--download a:hover {
+  .employees .sidebar_btns--download a:hover {
     border-radius: 12px;
     color: #ffffff; /* Hover durumunda renk değişimi */
     background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
   }
-  .employeesgir .content {
+  .employees .content {
     width: 95%;
   }
-  .employeesgir .content__content__title {
+  .employees .content__content__title {
     display: flex;
     justify-content: flex-start;
     text-align: start;
   }
-  .employeesgir .content__content__title h2 {
+  .employees .content__content__title h2 {
     font-weight: 700;
   }
-  .employeesgir .content__content--title {
+  .employees .content__content--title {
     margin-bottom: 3em;
   }
-  .employeesgir .content__content--title h5 {
+  .employees .content__content--title h5 {
     font-weight: 700;
   }
-  .employeesgir .content__content--date h6 {
+  .employees .content__content--date h6 {
     font-weight: 700;
   }
-  .employeesgir .content__content__main {
+  .employees .content__content__main {
     justify-content: center;
     align-items: center;
   }
-  .employeesgir .content__content__main--subtitle h6 {
+  .employees .content__content__main--subtitle h6 {
     justify-content: center;
     margin: 2em 0;
     font-weight: 600;
   }
-  .employeesgir .content__content__main--p p {
+  .employees .content__content__main--p p {
     justify-content: center;
     font-weight: 400;
   }
-  .employeesgir .content__content__main--p h6 {
+  .employees .content__content__main--p h6 {
     justify-content: center;
     margin: 2em 0;
     font-weight: 700;
   }
-  .employeesgir .content__content__main--p ul {
+  .employees .content__content__main--p ul {
     justify-content: center;
   }
-  .employeesgir .content__content__main--p ul li {
+  .employees .content__content__main--p ul li {
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 400px) {
+  .employees {
+    display: flex;
+    padding-top: 18vh !important;
+    background-color: #ededed;
+    padding: 50px;
+    flex-direction: column;
+  }
+  .employees .sidebar {
+    margin-bottom: 50px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .employees .sidebar_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 325px;
+    background-color: #ededed;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .employees .sidebar_btns a:last-child img {
+    scale: 2;
+  }
+  .employees .sidebar_btns a {
+    color: black;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .employees .sidebar_btns a img {
+    width: 15px;
+  }
+  .employees .sidebar_btns--download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+  }
+  .employees .sidebar_btns--download a:hover {
+    border-radius: 12px;
+    color: #ffffff; /* Hover durumunda renk değişimi */
+    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+  }
+  .employees .content {
+    width: 95%;
+  }
+  .employees .content__content__title {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .employees .content__content__title h2 {
+    font-weight: 700;
+  }
+  .employees .content__content--title {
+    margin-bottom: 3em;
+  }
+  .employees .content__content--title h5 {
+    font-weight: 700;
+  }
+  .employees .content__content--date h6 {
+    font-weight: 700;
+  }
+  .employees .content__content__main {
+    justify-content: center;
+    align-items: center;
+  }
+  .employees .content__content__main--subtitle h6 {
+    justify-content: center;
+    margin: 2em 0;
+    font-weight: 600;
+  }
+  .employees .content__content__main--p p {
+    justify-content: center;
+    font-weight: 400;
+  }
+  .employees .content__content__main--p h6 {
+    justify-content: center;
+    margin: 2em 0;
+    font-weight: 700;
+  }
+  .employees .content__content__main--p ul {
+    justify-content: center;
+  }
+  .employees .content__content__main--p ul li {
     font-weight: 400;
   }
 }

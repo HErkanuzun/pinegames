@@ -280,3 +280,134 @@
 
     }
 }
+@media screen and (max-width:400px) {
+    .privacy
+    {
+        display: flex;
+        padding-top: 18vh !important;
+        background-color: #ededed;
+        padding:50px;
+        flex-direction: column;
+        .sidebar
+        {
+            margin-bottom: 50px;
+            width: 90%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            &_btns
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 325px;
+                    background-color: #ededed;
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    a:last-child img{   
+                            scale: 2;
+                    }
+                    a{
+                        color: black;
+                        border-radius: 12px;
+                        background-color: #ffffff;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 12px 16px;
+                        width: 100%;
+                        margin-top:12px;
+                        img{
+                            width: 15px;
+                        }
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    &--download a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 305px;
+                    }
+                
+                    &--download a:hover {
+                        border-radius: 12px;
+                        color: $button-text-color; /* Hover durumunda renk değişimi */
+                        background-color: $button-background-color-2; /* Hover durumunda arka plan rengi değişimi */
+                        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+                    }
+                }
+
+        }
+        .content
+        {
+            width: 95%;
+
+            &__content
+            {
+                &__title
+                {
+                    display: flex;
+                    justify-content: flex-start;
+                    text-align: start;
+                    h2{
+                        font-weight: 700;
+                    }
+                }
+              
+                &--title
+                {
+                    margin-bottom: 3em;
+                    h5{
+                        font-weight: 700;
+                    }
+        
+                }
+                &--date
+                {
+                    h6{
+                        font-weight: 700;
+                    }
+                }
+                &__main
+                {
+                    justify-content: center;
+                    align-items: center;
+                    &--subtitle
+                    {
+                        h6{
+                            justify-content: center;
+                            margin: 2em 0;
+                            font-weight: 600;
+                        }
+                    }
+                    &--p
+                    {
+                        p{
+                            justify-content: center;
+                            font-weight: 400;
+                        }
+                        h6{
+                            justify-content: center;
+                            margin: 2em 0;
+                            font-weight: 700; 
+                        }
+                        ul{
+                            justify-content: center;
+                            li{
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+         
+
+    }
+}
