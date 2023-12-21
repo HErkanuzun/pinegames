@@ -1199,7 +1199,7 @@ Bigger2Smaller
 
 .privacy {
   display: flex;
-  padding: 200px;
+  padding-top: 200px;
   background-color: #ededed;
 }
 .privacy .sidebar {
@@ -1292,7 +1292,7 @@ Bigger2Smaller
     display: flex;
     padding: 1em;
     background-color: #ededed;
-    padding-top: 140px;
+    padding-top: 200px;
   }
   .privacy .sidebar {
     width: 30%;
@@ -1492,7 +1492,7 @@ Bigger2Smaller
     display: flex;
     padding: 1em;
     background-color: #ededed;
-    padding-top: 140px;
+    padding-top: 200px;
   }
   .terms .sidebar {
     width: 30%;
@@ -1506,7 +1506,7 @@ Bigger2Smaller
     display: flex;
     padding-top: 15vh !important;
     background-color: #ededed;
-    padding: 50px;
+    padding-top: 60px;
     flex-direction: column;
   }
   .terms .sidebar {
@@ -1736,7 +1736,7 @@ Bigger2Smaller
 
 .employees {
   display: flex;
-  padding: 200px;
+  padding-top: 200px;
   background-color: #ededed;
 }
 .employees .sidebar {
@@ -1830,7 +1830,7 @@ Bigger2Smaller
     display: flex;
     padding: 1em;
     background-color: #ededed;
-    padding-top: 140px;
+    padding-top: 200px;
   }
   .employees .sidebar {
     width: 30%;
