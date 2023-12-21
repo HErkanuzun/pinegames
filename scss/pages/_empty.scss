@@ -29,3 +29,123 @@
     }
    }
 }
+
+@media screen and (max-width:1025px) {
+    .empty{
+      
+        align-items: center !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+
+       &__title
+       {
+        h1{
+            padding-left: 0;
+            font-weight: 600;
+            font-size: 250px;
+            color: #ffffff;
+        }
+    
+       } 
+       &__message
+       {
+        padding-left: 40px;
+        padding-bottom: 40px;
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+            color: #ffffff;
+            padding-bottom: 10px;
+        }
+        p
+        {
+            font-size: 24px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+       }
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .empty{
+      
+        align-items: center !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+
+       &__title
+       {
+        h1{
+            padding-left: 0;
+            font-weight: 600;
+     
+            font-size: 150px;
+            color: #ffffff;
+        }
+    
+       } 
+       &__message
+       {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 0;
+        h2{
+            font-size: 32px;
+            font-weight: 600;
+            color: #ffffff;
+            padding-bottom: 10px;
+        }
+        p
+        {
+            font-size: 18px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+       }
+    }
+    
+}
+
+@media screen and (max-width:420px) {
+    .empty{
+      
+        min-height: 80vh;
+        align-items: center !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+
+       &__title
+       {
+        h1{
+            padding-left: 0;
+            font-weight: 600;
+     
+            font-size: 120px;
+            color: #ffffff;
+        }
+    
+       } 
+       &__message
+       {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 0;
+        h2{
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            padding-bottom: 10px;
+        }
+        p
+        {
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+            padding:0 12px;
+        }
+       }
+    }
+    
+}

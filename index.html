@@ -5,41 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='//unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>PineGames</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css" />  
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-  
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta name="author" content="http://www.hasanerkanuzun.com" />
 </head>
 
 <body>
-        <nav class=" navbar nav_none" id="navbar">
+        <nav class=" navbar nav_none" id="navbar" data-aos="fade-down">
             <a href="#" class="navbar__logo">
                 <img id="logo" src="/img/Logo_White_01.png" alt="">
             </a>
             <div id="navlinks" class="nav-links">
                 <ul id="liste">
                     <li><a id="link1" href="#about">ABOUT US</a></li>
-                    <li><a id="link2" href="https://www.linkedin.com/company/pinegames/jobs/">CAREERS</a></li>
+                    <li><a id="link2" target="_blank" href="https://www.linkedin.com/company/pinegames/jobs/">CAREERS</a></li>
                 </ul>
             </div>
             <i id="hamburgerbutton" class="fa-solid fa-bars fa-xl menu-hamburger" style="color: #ffffff !important;" alt=".menu hamburger"></i>
         </nav>
-        <section id="main">
+        <section id="main" >
             <div class="main">
                 <div class="main_hero">
                     <h1 class="main_hero-title">Join Us</h1>
                 </div>
                 <section id="about"></section>
             </div>
-            <div class="main__info">
+            <div class="main__info" >
                 <div class="main__info--text container">
                     <h1>Pine Games</h1>
                     <p>Pine Games, based in Istanbul, is a mobile gaming company driven by
@@ -50,19 +52,19 @@
                     </p>
                 </div>
             </div>
-            <div class="main__careers--text">
+            <div class="main__careers--text" >
                 <h1>Careers</h1>
                 <p>Together, we imagine, refine, and bring to life. If you're 
                     excited about being part of a fast-growing company, you might
                      just be the person we're searching for!</p>
                 <div class="main__info--button">
-                    <a href="https://www.linkedin.com/company/pinegames/jobs/">
+                    <a target="_blank" href="https://www.linkedin.com/company/pinegames/jobs/">
                         See All Positions
                     </a>
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" data-aos="fade-down">
             <div class="footer__logo">
                 <div class="footer__logo--img">
                     <a href="/">
@@ -92,17 +94,17 @@
             </div>
             <ul class="footer__socials">
                 <li>
-                    <a href="https://www.linkedin.com/company/pinegames">
+                    <a target="_blank" href="https://www.linkedin.com/company/pinegames">
                         <img src="/img/Linkedin.png" alt="">
                     </a>
-                    <a href="https://www.instagram.com/pinegamesofficial/">
+                    <a target="_blank" href="https://www.instagram.com/pinegamesofficial/">
                         <img src="/img/Instagram.png" alt="">
                     </a>
 
-                    <a href="https://twitter.com/pinegsofficial">
+                    <a target="_blank" href="https://twitter.com/pinegsofficial">
                         <img src="/img/Twitter.png" alt="">
                     </a>
-                    <a href="https://www.facebook.com/people/Pine-Games/100094852663953/">
+                    <a target="_blank" href="https://www.facebook.com/people/Pine-Games/100094852663953/">
                         <img src="/img/Facebook.png" alt="">
                     </a>
 
@@ -112,6 +114,8 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
         <script src="/js/index.js"></script>
 </body>
 

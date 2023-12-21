@@ -402,6 +402,95 @@ Bigger2Smaller
     padding: 0;
   }
 }
+.sidebar_active-item {
+  color: #ffffff !important;
+  background-color: #05C15D !important;
+}
+
+.sidebar {
+  width: 20%;
+  height: auto;
+}
+.sidebar_btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar_btns a {
+  color: #0A4436;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 16px;
+  width: 80%;
+  margin-top: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar_btns a img {
+  width: 15px;
+}
+
+@media screen and (max-width: 1550px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sidebar {
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ededed;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar_btns a:last-child img {
+    scale: 2;
+  }
+  .sidebar_btns a {
+    color: black;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar_btns a img {
+    width: 15px;
+  }
+  .sidebar_btns--download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+  }
+  .sidebar_btns--download a:hover {
+    border-radius: 12px;
+    color: #ffffff; /* Hover durumunda renk değişimi */
+    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
+  }
+}
 .games__info {
   display: flex;
   align-items: center;
@@ -881,6 +970,13 @@ Bigger2Smaller
     word-wrap: nowrap;
     text-align: start;
   }
+  .main__info {
+    height: auto;
+  }
+  .main__info--text {
+    padding: 75px 50px;
+    width: 100%;
+  }
   .main__info--text p {
     padding: 0;
   }
@@ -889,7 +985,7 @@ Bigger2Smaller
     justify-content: center;
     align-items: center;
     padding-top: 0px;
-    padding-bottom: 0p;
+    padding-bottom: 0px;
   }
   .main__careers--text p {
     width: 300px;
@@ -1202,35 +1298,6 @@ Bigger2Smaller
   padding-top: 200px;
   background-color: #ededed;
 }
-.privacy .sidebar {
-  width: 20%;
-  height: auto;
-}
-.privacy .sidebar_btns {
-  display: flex;
-  flex-direction: column;
-}
-.privacy .sidebar_btns a:nth-child(2) {
-  color: #ffffff;
-  background-color: #05C15D;
-}
-.privacy .sidebar_btns a {
-  color: #0A4436;
-  border-radius: 12px;
-  background-color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  padding: 12px 16px;
-  width: 80%;
-  margin-top: 12px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.privacy .sidebar_btns a img {
-  width: 15px;
-}
 .privacy .download a {
   color: #0A4436;
   border-radius: 12px;
@@ -1294,9 +1361,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding-top: 300px;
   }
-  .privacy .sidebar {
-    width: 30%;
-  }
   .privacy .content {
     width: 70%;
   }
@@ -1308,56 +1372,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
-  }
-  .privacy .sidebar {
-    margin-bottom: 50px;
-    width: 90%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .privacy .sidebar_btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 325px;
-    background-color: #ededed;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .privacy .sidebar_btns a:last-child img {
-    scale: 2;
-  }
-  .privacy .sidebar_btns a {
-    color: black;
-    border-radius: 12px;
-    background-color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px 16px;
-    width: 100%;
-    margin-top: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .privacy .sidebar_btns a img {
-    width: 15px;
-  }
-  .privacy .sidebar_btns--download a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 305px;
-  }
-  .privacy .sidebar_btns--download a:hover {
-    border-radius: 12px;
-    color: #ffffff; /* Hover durumunda renk değişimi */
-    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
   }
   .privacy .content {
     width: 95%;
@@ -1411,56 +1425,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
-  }
-  .privacy .sidebar {
-    margin-bottom: 50px;
-    width: 90%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .privacy .sidebar_btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 325px;
-    background-color: #ededed;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .privacy .sidebar_btns a:last-child img {
-    scale: 2;
-  }
-  .privacy .sidebar_btns a {
-    color: black;
-    border-radius: 12px;
-    background-color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px 16px;
-    width: 100%;
-    margin-top: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .privacy .sidebar_btns a img {
-    width: 15px;
-  }
-  .privacy .sidebar_btns--download a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 305px;
-  }
-  .privacy .sidebar_btns--download a:hover {
-    border-radius: 12px;
-    color: #ffffff; /* Hover durumunda renk değişimi */
-    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
   }
   .privacy .content {
     width: 95%;
@@ -1517,35 +1481,6 @@ Bigger2Smaller
   display: flex;
   padding-top: 200px;
   background-color: #ededed;
-}
-.terms .sidebar {
-  width: 20%;
-  height: auto;
-}
-.terms .sidebar_btns {
-  display: flex;
-  flex-direction: column;
-}
-.terms .sidebar_btns a:nth-child(1) {
-  color: #ffffff;
-  background-color: #05C15D;
-}
-.terms .sidebar_btns a {
-  color: #0A4436;
-  border-radius: 12px;
-  background-color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  padding: 12px 16px;
-  width: 80%;
-  margin-top: 12px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.terms .sidebar_btns a img {
-  width: 15px;
 }
 .terms .download a {
   color: #0A4436;
@@ -1610,9 +1545,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding-top: 200px;
   }
-  .terms .sidebar {
-    width: 30%;
-  }
   .terms .content {
     width: 70%;
   }
@@ -1624,56 +1556,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
-  }
-  .terms .sidebar {
-    margin-bottom: 50px;
-    width: 90%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .terms .sidebar_btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 325px;
-    background-color: #ededed;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .terms .sidebar_btns a:last-child img {
-    scale: 2;
-  }
-  .terms .sidebar_btns a {
-    color: black;
-    border-radius: 12px;
-    background-color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px 16px;
-    width: 100%;
-    margin-top: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .terms .sidebar_btns a img {
-    width: 15px;
-  }
-  .terms .sidebar_btns--download a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 305px;
-  }
-  .terms .sidebar_btns--download a:hover {
-    border-radius: 12px;
-    color: #ffffff; /* Hover durumunda renk değişimi */
-    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
   }
   .terms .content {
     width: 95%;
@@ -1727,56 +1609,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
-  }
-  .terms .sidebar {
-    margin-bottom: 50px;
-    width: 90%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .terms .sidebar_btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 325px;
-    background-color: #ededed;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .terms .sidebar_btns a:last-child img {
-    scale: 2;
-  }
-  .terms .sidebar_btns a {
-    color: black;
-    border-radius: 12px;
-    background-color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px 16px;
-    width: 100%;
-    margin-top: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .terms .sidebar_btns a img {
-    width: 15px;
-  }
-  .terms .sidebar_btns--download a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 305px;
-  }
-  .terms .sidebar_btns--download a:hover {
-    border-radius: 12px;
-    color: #ffffff; /* Hover durumunda renk değişimi */
-    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
   }
   .terms .content {
     width: 95%;
@@ -1960,6 +1792,94 @@ Bigger2Smaller
   color: #ffffff;
 }
 
+@media screen and (max-width: 1025px) {
+  .empty {
+    align-items: center !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .empty__title h1 {
+    padding-left: 0;
+    font-weight: 600;
+    font-size: 250px;
+    color: #ffffff;
+  }
+  .empty__message {
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+  .empty__message h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+  .empty__message p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .empty {
+    align-items: center !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .empty__title h1 {
+    padding-left: 0;
+    font-weight: 600;
+    font-size: 150px;
+    color: #ffffff;
+  }
+  .empty__message {
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .empty__message h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+  .empty__message p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 420px) {
+  .empty {
+    min-height: 80vh;
+    align-items: center !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .empty__title h1 {
+    padding-left: 0;
+    font-weight: 600;
+    font-size: 120px;
+    color: #ffffff;
+  }
+  .empty__message {
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .empty__message h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+  .empty__message p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0 12px;
+  }
+}
 * {
   text-wrap: wrap;
   word-wrap: break-word;
@@ -1970,35 +1890,6 @@ Bigger2Smaller
   display: flex;
   padding-top: 200px;
   background-color: #ededed;
-}
-.employees .sidebar {
-  width: 20%;
-  height: auto;
-}
-.employees .sidebar_btns {
-  display: flex;
-  flex-direction: column;
-}
-.employees .sidebar_btns a:nth-child(3) {
-  color: #ffffff;
-  background-color: #05C15D;
-}
-.employees .sidebar_btns a {
-  color: #0A4436;
-  border-radius: 12px;
-  background-color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  padding: 12px 16px;
-  width: 80%;
-  margin-top: 12px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.employees .sidebar_btns a img {
-  width: 15px;
 }
 .employees .download a {
   color: #0A4436; /* İlk durum için renk */
@@ -2064,9 +1955,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding-top: 200px;
   }
-  .employees .sidebar {
-    width: 30%;
-  }
   .employees .content {
     width: 70%;
   }
@@ -2095,56 +1983,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
-  }
-  .employees .sidebar {
-    margin-bottom: 50px;
-    width: 90%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .employees .sidebar_btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 325px;
-    background-color: #ededed;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .employees .sidebar_btns a:last-child img {
-    scale: 2;
-  }
-  .employees .sidebar_btns a {
-    color: black;
-    border-radius: 12px;
-    background-color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px 16px;
-    width: 100%;
-    margin-top: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .employees .sidebar_btns a img {
-    width: 15px;
-  }
-  .employees .sidebar_btns--download a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 305px;
-  }
-  .employees .sidebar_btns--download a:hover {
-    border-radius: 12px;
-    color: #ffffff; /* Hover durumunda renk değişimi */
-    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
   }
   .employees .content {
     width: 95%;
@@ -2198,56 +2036,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
-  }
-  .employees .sidebar {
-    margin-bottom: 50px;
-    width: 90%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .employees .sidebar_btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 325px;
-    background-color: #ededed;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .employees .sidebar_btns a:last-child img {
-    scale: 2;
-  }
-  .employees .sidebar_btns a {
-    color: black;
-    border-radius: 12px;
-    background-color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px 16px;
-    width: 100%;
-    margin-top: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .employees .sidebar_btns a img {
-    width: 15px;
-  }
-  .employees .sidebar_btns--download a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 305px;
-  }
-  .employees .sidebar_btns--download a:hover {
-    border-radius: 12px;
-    color: #ffffff; /* Hover durumunda renk değişimi */
-    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
   }
   .employees .content {
     width: 95%;
@@ -2301,56 +2089,6 @@ Bigger2Smaller
     background-color: #ededed;
     padding: 50px;
     flex-direction: column;
-  }
-  .employees .sidebar {
-    margin-bottom: 50px;
-    width: 90%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .employees .sidebar_btns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 325px;
-    background-color: #ededed;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .employees .sidebar_btns a:last-child img {
-    scale: 2;
-  }
-  .employees .sidebar_btns a {
-    color: black;
-    border-radius: 12px;
-    background-color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px 16px;
-    width: 100%;
-    margin-top: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .employees .sidebar_btns a img {
-    width: 15px;
-  }
-  .employees .sidebar_btns--download a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 305px;
-  }
-  .employees .sidebar_btns--download a:hover {
-    border-radius: 12px;
-    color: #ffffff; /* Hover durumunda renk değişimi */
-    background-color: #0A4436; /* Hover durumunda arka plan rengi değişimi */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hover durumunun geçişi */
   }
   .employees .content {
     width: 95%;
