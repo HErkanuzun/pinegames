@@ -417,7 +417,8 @@ Bigger2Smaller
   align-items: center;
 }
 .sidebar_btns a {
-  color: #0A4436;
+  color: #05C15D;
+  border: #05C15D solid 2px;
   border-radius: 12px;
   background-color: #ffffff;
   text-align: center;
@@ -425,10 +426,10 @@ Bigger2Smaller
   padding: 12px 16px;
   width: 80%;
   margin-top: 12px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-weight: bold;
 }
 .sidebar_btns a img {
   width: 15px;
@@ -447,6 +448,7 @@ Bigger2Smaller
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 50px;
   }
   .sidebar_btns {
     display: flex;
@@ -1292,61 +1294,54 @@ Bigger2Smaller
   word-wrap: break-word;
   white-space: wrap;
 }
+* h5 {
+  color: #202020;
+}
+* p {
+  color: #202020;
+}
 
 .privacy {
   display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
+  padding-right: 70px;
   background-color: #ededed;
-}
-.privacy .download a {
-  color: #0A4436;
-  border-radius: 12px;
-  background-color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  padding: 12px 16px;
-  width: 80%;
-  margin-top: 12px;
-}
-.privacy .download a:hover {
-  border-radius: 12px;
-  transition: 0.3s ease-in-out;
-  color: #ffffff;
-  background-color: #0A4436;
 }
 .privacy .content {
   width: 75%;
-}
-.privacy .content__content__title {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.privacy .content__content__title h2 {
-  font-weight: bold;
+  padding-right: 10vh;
 }
 .privacy .content__content--title {
+  padding-top: 10px;
   margin-bottom: 3em;
 }
 .privacy .content__content--title h5 {
-  font-weight: 700;
-}
-.privacy .content__content--date h6 {
-  font-weight: 700;
-}
-.privacy .content__content__main--subtitle h6 {
-  margin: 2em 0;
+  color: #202020;
+  font-size: 30px;
   font-weight: 600;
 }
+.privacy .content__content--date h6 {
+  color: #202020;
+  font-weight: 600;
+  padding-bottom: 35px;
+}
+.privacy .content__content__main--subtitle h6 {
+  color: #202020;
+  margin: 2em 0;
+  font-weight: 700;
+}
 .privacy .content__content__main--p p {
+  color: #202020;
   font-weight: 400;
 }
 .privacy .content__content__main--p h6 {
+  color: #202020;
   margin: 2em 0;
   font-weight: 700;
 }
 .privacy .content__content__main--p ul li {
+  color: #202020;
   font-weight: 400;
 }
 
@@ -1372,6 +1367,7 @@ Bigger2Smaller
     padding-top: 18vh !important;
     background-color: #ededed;
     padding: 50px;
+    padding-right: 10px !important;
     flex-direction: column;
   }
   .privacy .content {
@@ -1383,16 +1379,16 @@ Bigger2Smaller
     text-align: start;
   }
   .privacy .content__content__title h2 {
-    font-weight: 700;
+    font-weight: 600;
   }
   .privacy .content__content--title {
     margin-bottom: 3em;
   }
   .privacy .content__content--title h5 {
-    font-weight: 700;
+    font-weight: 600;
   }
   .privacy .content__content--date h6 {
-    font-weight: 700;
+    font-weight: 600;
   }
   .privacy .content__content__main {
     justify-content: center;
@@ -1401,7 +1397,7 @@ Bigger2Smaller
   .privacy .content__content__main--subtitle h6 {
     justify-content: center;
     margin: 2em 0;
-    font-weight: 600;
+    font-weight: 700;
   }
   .privacy .content__content__main--p p {
     justify-content: center;
@@ -1436,16 +1432,16 @@ Bigger2Smaller
     text-align: start;
   }
   .privacy .content__content__title h2 {
-    font-weight: 700;
+    font-weight: 600;
   }
   .privacy .content__content--title {
     margin-bottom: 3em;
   }
   .privacy .content__content--title h5 {
-    font-weight: 700;
+    font-weight: 600;
   }
   .privacy .content__content--date h6 {
-    font-weight: 700;
+    font-weight: 600;
   }
   .privacy .content__content__main {
     justify-content: center;
@@ -1502,23 +1498,29 @@ Bigger2Smaller
 }
 .terms .content {
   width: 75%;
-}
-.terms .content__content__title {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.terms .content__content__title h2 {
-  font-weight: 700;
+  padding-right: 10vh;
 }
 .terms .content__content--title {
+  padding-top: 10px;
+  margin-bottom: 3em;
+}
+.terms .content__content--title h5 {
+  color: #202020;
+  font-size: 30px;
+  font-weight: 600;
+}
+.terms .content__content--title {
+  padding-top: 10px;
   margin-bottom: 3em;
 }
 .terms .content__content--title h5 {
   font-weight: 700;
+  word-spacing: 2px;
 }
 .terms .content__content--date h6 {
-  font-weight: 700;
+  color: #202020;
+  font-weight: 600;
+  padding-bottom: 35px;
 }
 .terms .content__content__main--subtitle h6 {
   margin: 2em 0;
@@ -1561,6 +1563,7 @@ Bigger2Smaller
   }
   .terms .content {
     width: 95%;
+    padding-right: 0;
   }
   .terms .content__content__title {
     display: flex;
@@ -1614,6 +1617,9 @@ Bigger2Smaller
   }
   .terms .content {
     width: 95%;
+  }
+  .terms .content__content {
+    padding-right: 0 !important;
   }
   .terms .content__content__title {
     display: flex;
@@ -1912,27 +1918,31 @@ Bigger2Smaller
 }
 .employees .content {
   width: 75%;
+  padding-right: 10vh;
 }
-.employees .content__content__title {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.employees .content__content--title {
+  padding-top: 10px;
+  margin-bottom: 3em;
 }
-.employees .content__content__title h2 {
-  font-weight: 700;
+.employees .content__content--title h5 {
+  color: #202020;
+  font-size: 30px;
+  font-weight: 600;
 }
 .employees .content__content--title {
   margin-bottom: 3em;
 }
 .employees .content__content--title h5 {
-  font-weight: 700;
+  font-weight: 600;
 }
 .employees .content__content--date h6 {
-  font-weight: 700;
+  color: #202020;
+  font-weight: 600;
+  padding-bottom: 35px;
 }
 .employees .content__content__main--subtitle h6 {
   margin: 2em 0;
-  font-weight: 600;
+  font-weight: 700;
 }
 .employees .content__content__main--p p {
   font-weight: 400;

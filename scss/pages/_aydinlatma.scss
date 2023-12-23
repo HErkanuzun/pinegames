@@ -30,31 +30,34 @@
         .content
         {
             width: 75%;
-            
+            padding-right: 10vh;
             &__content
             {
-                &__title
+                &--title
                 {
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    h2{
-                        font-weight: 700;
+                    padding-top: 10px;
+                    margin-bottom: 3em;
+                    h5{
+                        color: $h1-color;
+                        font-size: 30px;
+                        font-weight: 600;
                     }
                 }
-              
                 &--title
                 {
                     margin-bottom: 3em;
                     h5{
-                        font-weight: 700;
+                        font-weight: 600;
                     }
         
                 }
                 &--date
                 {
+
                     h6{
-                        font-weight: 700;
+                        color: $h1-color;
+                        font-weight: 600;
+                        padding-bottom: 35px;
                     }
                 }
                 &__main
@@ -63,7 +66,7 @@
                     {
                         h6{
                             margin: 2em 0;
-                            font-weight: 600;
+                            font-weight: 700;
                         }
                     }
                     &--p

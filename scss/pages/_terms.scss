@@ -32,31 +32,36 @@
         .content
         {
             width: 75%;
-            
+            padding-right: 10vh;
             &__content
             {
-                &__title
+                &--title
                 {
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    h2{
-                        font-weight: 700;
+                    padding-top: 10px;
+                    margin-bottom: 3em;
+                    h5{
+                        color: $h1-color;
+                        font-size: 30px;
+                        font-weight: 600;
                     }
                 }
               
                 &--title
                 {
+                    padding-top: 10px;
                     margin-bottom: 3em;
                     h5{
                         font-weight: 700;
+                        word-spacing: 2px;
                     }
         
                 }
                 &--date
                 {
                     h6{
-                        font-weight: 700;
+                        color: $h1-color;
+                        font-weight: 600;
+                        padding-bottom: 35px;
                     }
                 }
                 &__main
@@ -117,15 +122,13 @@
     {
         display: flex;
         padding-top: 18vh !important;
-
         background-color: #ededed;
         padding:50px;
         flex-direction: column;
-      
         .content
         {
             width: 95%;
-
+            padding-right: 0;
             &__content
             {
                 &__title
@@ -204,6 +207,7 @@
 
             &__content
             {
+                padding-right: 0 !important;
                 &__title
                 {
                     display: flex;
