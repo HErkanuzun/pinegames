@@ -6,10 +6,9 @@
 .terms
 {
     display: flex;
-    
     padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #ededed;
-       
         .download{
             
             a{
@@ -118,6 +117,7 @@
     {
         display: flex;
         padding-top: 18vh !important;
+
         background-color: #ededed;
         padding:50px;
         flex-direction: column;
