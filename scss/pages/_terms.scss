@@ -32,7 +32,8 @@
         .content
         {
             width: 75%;
-            padding-right: 10vh;
+            padding-right: 15vh;
+            padding-bottom: 10vh;
             &__content
             {
                 &--title
@@ -128,7 +129,7 @@
         .content
         {
             width: 95%;
-            padding-right: 0;
+            padding-right: 10px;
             &__content
             {
                 &__title
@@ -204,10 +205,9 @@
         .content
         {
             width: 95%;
-
+            padding-right: 5px !important;
             &__content
             {
-                padding-right: 0 !important;
                 &__title
                 {
                     display: flex;

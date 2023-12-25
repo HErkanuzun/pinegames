@@ -30,7 +30,8 @@
         .content
         {
             width: 75%;
-            padding-right: 10vh;
+            padding-right: 15vh;
+            padding-bottom: 10vh;
             &__content
             {
                 &--title
@@ -73,6 +74,12 @@
                     {
                         p{
                             font-weight: 400;
+                            a{
+                                text-decoration: underline !important;
+                                font-weight: 600;
+                                background-color: transparent !important;
+                                color: $p-color !important;
+                            }
                         }
                         h6{
                             margin: 2em 0;
@@ -144,7 +151,7 @@
         .content
         {
             width: 95%;
-
+            padding-right: 10px;
             &__content
             {
                 &__title
@@ -222,7 +229,7 @@
         .content
         {
             width: 95%;
-
+            padding-right: 10px !important;
             &__content
             {
                 &__title
@@ -298,7 +305,7 @@
         .content
         {
             width: 95%;
-
+            padding-right: 5px;
             &__content
             {
                 &__title
