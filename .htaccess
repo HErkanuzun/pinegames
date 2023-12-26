@@ -1,14 +1,6 @@
-# Enable the rewrite engine
 RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
 
-# Set the default page to index.html
-DirectoryIndex index.html
-
-# Handle requests for HTML files
-<FilesMatch "\.html$">
-    # Add any additional MIME types you want to support
-    AddType text/html .html
-</FilesMatch>
-
-# Custom 404 error page
-ErrorDocument 404 /Pages/404.html
+ErrorDocument 404 /pages/404
